@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+      Route::get('/Cadastro', 'CadastroController@Add');
+      
+      Route::post('/Cadastro', 'CadastroController@Inserir');
+            
+            
 Route::get('/', function () {
     return view('welcome');
 });
