@@ -1,48 +1,45 @@
 <?php
 
-namespace App\Http\Request;
+namespace App\Http\request;
 
-class GetCadastro
+class Cadastro
 {
-  
-   * @var string
-   */
-  protected $SeuSistema;
 
+     protected $SeuSistema ;
+   protected $NrLocal ;
+   protected $HoraLocal ;
 
-  protected $NrLocal;
-
-protected $HoraLocal;
-
-protected $Sessao;
-
-protected $Nr_Central;
-
-protected $HoraCentral;
-
-protected $Administradora;
-
+   protected $Sessao ;
+   protected $NrCentral ;
+   protected $HoraCentral ;
+  protected  $CtlAP ;
+   protected $Administradora ;
 protected $Terminal;
 
-protected $OrigemServico;
 
-protected $IdOrigem;
 
-protected $OpcaoOperador;
+   protected $IdOrigem ;
+   protected $OrigemServico ;
+  protected  $OpcaoOperador ;
+  
+
+
+
+
 
 protected $Usuario;
-protected $CPF;
-protected $DataNasc;
-protected $Consumidor;
+protected $CPFConsumidor;
+protected $DataNascConsumidor;
+protected $NomeConsumidor;
 protected $Sexo;
-protected $CEP;
-protected $UF;
-protected $Cidade;
-protected $Bairro;
-protected $TLogradouro;
-protected $Logradouro;
-protected  $Numero;
-protected $ComplementoEnd;
+protected $CEPConsumidor;
+protected $UFConsumidor;
+protected $CidadeConsumidor;
+protected $BairroConsumidor;
+protected $TipoLogradouroConsumidor;
+protected $LogradouroConsumidor;
+protected  $NrEnderConsumidor;
+protected $ComplEnderConsumidor;
 protected $Celular_DD;
 protected $Celular;
 protected $TeleFixo;
@@ -50,74 +47,59 @@ protected $Email;
 protected $MatInfo;
 protected $UsoDados;
 protected $Correio;
-protected $AceitaTele;
+protected $AceitaFone;
 protected $AceitaSMS;
 protected $AceitaEmail;
 protected $Senha;
 
 
- 
-
-  /**
-   * GetConversionAmount constructor.
-   *
-   * @param string $CurrencyFrom
-   * @param string $CurrencyTo
-   * @param string $RateDate
-   * @param string $Amount
-   */
-  public function __construct($SeuSistema, $NrLocal,$HoraLocal,
- $Sessao,$Nr_Central,$HoraCentral, $Administradora, $Terminal,$OrigemServico, $IdOrigem, $OpcaoOperador, $Usuario,
- $CPF, $DataNas,$Consumidor, $Sexo,$CEP,$UF, $Cidade, $Bairro,$TLogradouro, $Logradouro,$Numero,$ComplementoEnd,$Celular_DD,$Celular, $TeleFixo,$Email,$MatInfo,$UsoDados,$Correio,$AceitaTele,$AceitaSMS, $AceitaEmail,$Senha,
-)
+  public function __construct($SeuSistema,$NrLocal,$HoraLocal,$Sessao,$NrCentral,$HoraCentral,$CtlAP,
+    $Administradora,$Terminal,$OrigemServico,$IdOrigem,$OpcaoOperador,$Usuario,$CPFConsumidor,$DataNascConsumidor,$NomeConsumidor,$Sexo,$CEPConsumidor,$UFConsumidor,$CidadeConsumidor,$BairroConsumidor,$TipoLogradouroConsumidor,$LogradouroConsumidor,$NrEnderConsumidor,$ComplEnderConsumidor,$DDDCelular,$FoneCelular, $DDDFixo ,$FoneFixo,$EmailConsumidor,$AceitaMaterialInformativo,$AceitaUsodosDados,$AceitaCorreio,$AceitaFone,$AceitaSMS, $AceitaEmail,$ControlePSW)
   {    
-
+    $this->SeuSistema  = $SeuSistema;
     $this->NrLocal = $NrLocal;
     $this->HoraLocal  = $HoraLocal;
-    $this->Sessao   = $Sessao;
-    $this->Nr_Central    = $Nr_Central;
+    $this->Sessao= $Sessao;
+    $this->NrCentral    = $NrCentral;
     $this->HoraCentral= $HoraCentral;
+    $this->CtlAP= $CtlAP;
     $this->Administradora  = $Administradora;
-    $this->Terminal= $Terminal;
+        $this->Terminal  = $Terminal;
+
     $this->OrigemServico      = $OrigemServico;
-    $this->IdOrigem= $IdOrigem;
+        $this->IdOrigem= $IdOrigem;
+
     $this->OpcaoOperador   = $OpcaoOperador;
+
     $this->Usuario    = $Usuario;
-    $this->CPF      = $CPF;
-    $this->DataNas = $DataNas;
-    $this->Consumidor   = $Consumidor;
-    $this->Sexo   = $RateDate;
-    $this->CEP       = $CEP;
-    $this->UF= $UF;
-    $this->Cidade   = $Cidade;
-    $this->Bairro   = $Bairro;
-    $this->TLogradouro    = $TLogradouro;
-    $this->Logradouro = $Logradouro;
-    $this->Numero   = $Numero;
-    $this->ComplementoEnd   = $ComplementoEnd;
-    $this->Celular_DD      = $Celular_DD;
-    $this->Celular= $Celular;
-    $this->TeleFixo   = $TeleFixo;
-    $this->Email=$Email;
-    $this->MatInfo  = $MatInfo;  
-  	$this->UsoDados = $UsoDados;
-    $this->Correio = $Correio;
-    $this->AceitaTele  = $AceitaTele;
+    $this->CPFConsumidor = $CPFConsumidor;
+    $this->DataNascConsumidor = $DataNascConsumidor;
+    $this->NomeConsumidor  = $NomeConsumidor;
+    $this->Sexo   = $Sexo;
+    $this->CEPConsumidor       = $CEPConsumidor;
+    $this->UFConsumidor= $UFConsumidor;
+    $this->CidadeConsumidor   = $CidadeConsumidor;
+    $this->BairroConsumidor   = $BairroConsumidor;
+    $this->TipoLogradouroConsumidor   = $TipoLogradouroConsumidor;
+    $this->LogradouroConsumidor = $LogradouroConsumidor;
+    $this->NrEnderConsumidor  = $NrEnderConsumidor;
+    $this->ComplEnderConsumidor   = $ComplEnderConsumidor;
+    $this->DDDCelular=$DDDCelular;
+    $this->FoneCelular=$FoneCelular;
+        $this->DDDFixo   = $DDDFixo;
+
+    $this->FoneFixo   = $FoneFixo;
+    $this->EmailConsumidor=$EmailConsumidor;
+    $this->AceitaMaterialInformativo  = $AceitaMaterialInformativo;  
+  	$this->AceitaUsodosDados = $AceitaUsodosDados;
+    $this->AceitaCorreio = $AceitaCorreio;
+    $this->AceitaFone  = $AceitaFone;
     $this->AceitaSMS   = $AceitaSMS;
     $this->AceitaEmail= $AceitaEmail;
-    $this->Senha  = $Senha;
+    $this->ControlePSW  = $ControlePSW;
   }
-
-  /**
-   * @return string
-   */
-  public function getCurrencyFrom()
-  {
-    return $this->CurrencyFrom;
-  }
-
-
 }
+  
 
 
 

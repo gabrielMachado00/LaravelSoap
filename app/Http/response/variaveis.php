@@ -3,14 +3,14 @@
  // Create connection
 
 
-$cuida=DB::Table('mk_integrador')->where('id','=',1)->get();
+	$cuida=DB::Table('mk_integrador')->where('id','=',1)->get();
 
 
-foreach ($cuida as $cuidas) {
-	
-	$sessao=$cuidas->num_sessao;
-	a$hr_central=$cuidas->NumHoraCentral;
-}
+	foreach ($cuida as $cuidas) {
+		
+		$sessao=$cuidas->num_sessao;
+		$hr_central=$cuidas->NumHoraCentral;
+	}
 
 
 

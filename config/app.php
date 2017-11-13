@@ -25,6 +25,7 @@ return [
     |
     */
 
+
     'env' => env('APP_ENV', 'production'),
 
     /*
@@ -64,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',
 
     /*
     |--------------------------------------------------------------------------

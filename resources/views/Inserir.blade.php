@@ -1,5 +1,7 @@
                  <form method="post">
-				<label for="Consumidor">Nome consumidor:</label>
+
+         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                 <label for="Consumidor">Nome consumidor:</label>
 				<input type="text" name="Consumidor" required/>
 				<label for="Sexo">Sexo:</label>
 				<label><input type="radio" name="Sexo" value="77" required/>Masculino</label>
@@ -21,13 +23,11 @@
 				<label for="CompletmentoEnd">Complemento:</label>
 				<input type="text" name="ComplementoEnd"/>
 				<label for="TeleFixo">Telefone Fixo:</label>
-				<input type="text" id="Telefixo" required/>
+				<input type="text" id="Telefixo" name="Telefixo" required/>
 				<input type="hidden" name="TeleFixo_DD" id="Telefixo_unmask_dd" required/>
 				<input type="hidden" name="TeleFixo" id="Telefixo_unmask" required/>
 				<label for="Celular">Celular</label>
-				<input type="text" id="celular" required/>
-				<input type="hidden" id="celular_unmask_dd" name="Celular_DD" required/>
-				<input type="hidden" id="celular_unmask" name="Celular" required/>
+				<input type="text" id="Celular" name="Celular" required/>
 				<label for="Email">Email:</label>
 				<input type="email" name="Email" required/>
 				<label for="MatInfo">Material Informativo:
