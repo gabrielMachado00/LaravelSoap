@@ -8,26 +8,16 @@ class Cadastro
      protected $SeuSistema ;
    protected $NrLocal ;
    protected $HoraLocal ;
-
    protected $Sessao ;
    protected $NrCentral ;
    protected $HoraCentral ;
   protected  $CtlAP ;
    protected $Administradora ;
 protected $Terminal;
-
-
-
-   protected $IdOrigem ;
+  protected $IdOrigem ;
    protected $OrigemServico ;
   protected  $OpcaoOperador ;
-  
-
-
-
-
-
-protected $Usuario;
+  protected $Usuario;
 protected $CPFConsumidor;
 protected $DataNascConsumidor;
 protected $NomeConsumidor;
@@ -73,8 +63,10 @@ protected $Senha;
 
     $this->Usuario    = $Usuario;
     $this->CPFConsumidor = $CPFConsumidor;
+
     $this->DataNascConsumidor = $DataNascConsumidor;
-    $this->NomeConsumidor  = $NomeConsumidor;
+        $this->NomeConsumidor  = $NomeConsumidor;
+
     $this->Sexo   = $Sexo;
     $this->CEPConsumidor       = $CEPConsumidor;
     $this->UFConsumidor= $UFConsumidor;

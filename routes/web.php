@@ -10,9 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-      Route::get('/Cadastro', 'CadastroController@Add');
+      Route::get('/Cadastro/Consumidor', 'CadastroController@AddConsumidor');
       
-      Route::post('/Cadastro', 'CadastroController@Inserir');
+      Route::post('/Cadastro/Consumidor', 'CadastroController@InserirConsumidor');
+
+
+      Route::get('/Cadastro/Adesao', 'AdesaoController@AddAdesao');
+      
+      Route::post('/Cadastro/Adesao', 'AdesaoController@InserirAdesao');
+            
             
             
 Route::get('/', function () {

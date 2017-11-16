@@ -1,4 +1,4 @@
-                 <form method="post">
+   <form action="/Cadastro/Consumidor" method="post">
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
                  <label for="Consumidor">Nome consumidor:</label>
@@ -23,10 +23,14 @@
 				<label for="CompletmentoEnd">Complemento:</label>
 				<input type="text" name="ComplementoEnd"/>
 				<label for="TeleFixo">Telefone Fixo:</label>
+
+				<input type="text" name="TeleFixo_DD" required/>
 				<input type="text" id="Telefixo" name="Telefixo" required/>
-				<input type="hidden" name="TeleFixo_DD" id="Telefixo_unmask_dd" required/>
-				<input type="hidden" name="TeleFixo" id="Telefixo_unmask" required/>
+
+
+			
 				<label for="Celular">Celular</label>
+				<input type="text" id="Celular_DD" name="Celular_DD" required/>
 				<input type="text" id="Celular" name="Celular" required/>
 				<label for="Email">Email:</label>
 				<input type="email" name="Email" required/>
@@ -42,8 +46,9 @@
 				<input type="checkbox" name="AceitaSMS" value="83"/></label>
 				<label for="AceitaEmail">Aceita email:
 				<input type="checkbox" name="AceitaEmail" value="83"/></label>
-				<input type="hidden" name="CPFCadastro"  required/>
-				<input type="hidden" name="DataNascCadastro"  required/>
-				<input type="hidden" name="SenhaCadastro"  required/>
+				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
+				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>
+				<input type="hidden" name="SenhaCadastro"  value="{{$senha}}" required/>
 				<input type="hidden" name="NrCentral"  required/>
 				<input type="submit" name="submit2" value="Enviar"/>
+
