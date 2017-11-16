@@ -88,6 +88,8 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
     new Adesao('DM03306921201R',$Nrdata,$data,
+
+      
 $sessao, '0',Request::input('datanasc'), 'AP00','041', '00000000','66','0', '88','ADESSITE',
  Request::input('CPF') , '2017-11-12T22:54:13', Request::input('Senha'), 
  Request::input('Cartao'), '','', Request::input('CodProf'),
