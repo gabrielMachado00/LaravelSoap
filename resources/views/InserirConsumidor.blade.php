@@ -1,4 +1,29 @@
+
+  @extends('layouts.app')
+
+
    <form action="/Cadastro/Consumidor" method="post">
+
+
+@if($response)
+	
+
+<script>
+	
+
+
+
+alert("Cadastrado com sucesso!");
+
+</script>
+
+
+
+
+@endif
+
+
+
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
                  <label for="Consumidor">Nome consumidor:</label>
@@ -27,7 +52,6 @@
 				<input type="text" name="TeleFixo_DD" required/>
 				<input type="text" id="Telefixo" name="Telefixo" required/>
 
-
 			
 				<label for="Celular">Celular</label>
 				<input type="text" id="Celular_DD" name="Celular_DD" required/>
@@ -46,9 +70,10 @@
 				<input type="checkbox" name="AceitaSMS" value="83"/></label>
 				<label for="AceitaEmail">Aceita email:
 				<input type="checkbox" name="AceitaEmail" value="83"/></label>
-				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
+				<input type="hidden" name="CPFCadastro" value=""  required/>
 				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>
 				<input type="hidden" name="SenhaCadastro"  value="{{$senha}}" required/>
 				<input type="hidden" name="NrCentral"  required/>
 				<input type="submit" name="submit2" value="Enviar"/>
-
+			</form>
+  

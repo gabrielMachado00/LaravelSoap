@@ -1,9 +1,32 @@
-	          
-					<form method="post">
-						         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
+  
+   
+       @extends('layouts.app')
+
+
+
+
+
+        @section('content')
+
+
+
+
+
+<form method="post"> 
+
+
+
+		         <input type="hidden" name="_token" value="{{ csrf_token()}}">
+
+
+                               <div class="form-group">
 						<label for="CPF">CPF</label>
-						<input type="text" name="CPF" id="cpf"  required/>
+						<input type="text" name="CPF" class="form-control" id="cpf"  required/>
+
+					</div>
+
+					
 						<label for="DataNasc">Data Nascimento</label>
 						<input type="text" id="datanasc" name="datanasc"  required/>
 						<label for="Senha">Senha</label>
@@ -19,7 +42,12 @@
 						<input type="hidden" name="Cartao" value="0" />
 						<input type="hidden" id="EAN" name="EAN" value="" />
 
-			      <div class="alinha-direita">
-							<input class="botao-cadastro-v" type="submit" name="submitForm2" value="Proximo"/>
-						</div>
+<button class="btn btn-primary"  id="btnMensagem" data-toggle="modal" data-target="#modal-mensagem">Exibir mensagem</button>
+
+
+
+
 					</form>
+
+   @show
+    

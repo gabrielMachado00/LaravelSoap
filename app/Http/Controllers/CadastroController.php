@@ -112,7 +112,5 @@ Request::input('ComplementoEnd'),
 
 
     
-   var_dump($response);
-   exit;
   }
 }

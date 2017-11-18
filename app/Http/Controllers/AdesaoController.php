@@ -7,6 +7,8 @@ use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Request;
+
+use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
 use DateTime;
 use Illuminate\Http\RedirectResponse ;
@@ -116,9 +118,8 @@ $cpf=$adesao->CPFConsumidor;
 $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 
-
-
-return View('InserirConsumidor',compact('cpf', 'DataNasc', 'senha'));
+ 
+return View('InserirConsumidor',compact('cpf', 'DataNasc', 'senha','response'));
 
 
   
