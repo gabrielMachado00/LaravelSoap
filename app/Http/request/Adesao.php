@@ -28,7 +28,7 @@ protected $EAN;
 protected $Campanha;
 protected $CodigoProfissional;
 protected $UFProfissional;
-protected $NomeProfissional;
+public $NomeProfissional;
 protected $Lista;
 
 
@@ -55,6 +55,7 @@ protected $Lista;
     $this->Cartao= $Cartao;
     $this->EAN = $EAN;
         $this->Campanha    = $Campanha;
+        $this->CodigoProfissional=$CodigoProfissional;
     $this->UFProfissional = $UFProfissional;
     $this->NomeProfissional= $NomeProfissional;
        $this->Lista= $Lista;

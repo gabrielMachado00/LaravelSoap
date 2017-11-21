@@ -19,8 +19,19 @@
       
       Route::post('/Cadastro/Adesao', 'AdesaoController@InserirAdesao');
             
+
+             Route::get('/Login', 'LoginController@LoginAdd');
+      
+      Route::post('/Login', 'LoginController@Login');
             
             
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

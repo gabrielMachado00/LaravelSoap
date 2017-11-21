@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
+<html lang="{{ app()->getLocale() }}">
+<head>
+   <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">       
 
-        <title>{{ config('app.name', 'Merck Talks') }}</title>
+        <title>{{ config('app.name', 'Merck Cuida') }}</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
@@ -35,5 +35,6 @@
             ga('create', 'UA-85848600-2', 'auto');
             ga('send', 'pageview');
         </script>
-    </head>
-    </html>
+</head>
+
+</html>

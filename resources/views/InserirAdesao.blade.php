@@ -43,10 +43,6 @@
 						<input type="hidden" id="EAN" name="EAN" value="" />
 
 <button class="btn btn-primary"  id="btnMensagem" data-toggle="modal" data-target="#modal-mensagem">Exibir mensagem</button>
-
-
-
-
 					</form>
 
    @show

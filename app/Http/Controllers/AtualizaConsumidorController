@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Illuminate\Http\RedirectResponse ;
 use Request;
-
-
-class CadastroController
+class AtualizaConsumidorController
 {
   /**
    * @var SoapWrapper
@@ -111,6 +109,7 @@ Request::input('ComplementoEnd'),
  Request::input('SenhaCadastro')
  )
 ]);
+
 
     
   }

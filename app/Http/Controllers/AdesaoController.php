@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\request\Adesao;
+use App\Http\response\GetAdesaoResponse;
+
 use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
@@ -74,8 +76,13 @@ if ($sessao == ''){
          
     ->classmap([
         Adesao::class,
+      GetAdesaoResponse::class,
+        ])
 
+    ->options([
+           'features'=>SOAP_SINGLE_ELEMENT_ARRAYS
         ]);
+
   });
 
 
@@ -89,7 +96,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
   [
 
 
-    new Adesao('DM03306921201R',$Nrdata,$data,
+    new Adesao('ADM03306921201R',$Nrdata,$data,
 
 
 $sessao, '0',Request::input('datanasc'), 'AP00','041', '00000000','66','0', '88','ADESSITE',
@@ -99,8 +106,13 @@ $sessao, '0',Request::input('datanasc'), 'AP00','041', '00000000','66','0', '88'
  Request::input('NomeProf'),'')
 
 ]);
+
+
+
+
+
     // Without classmap
-   $adesao= new Adesao('DM03306921201R',$Nrdata,$data,
+   $adesao= new Adesao('ADM03306921201R',$Nrdata,$data,
 $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
 
  Request::input('CPF') , Request::input('datanasc'), Request::input('Senha'), 
@@ -114,12 +126,23 @@ $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
  Request::input('NomeProf'),'');
 
 
+
+
+
+
+
+
 $cpf=$adesao->CPFConsumidor;
 $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 
- 
-return View('InserirConsumidor',compact('cpf', 'DataNasc', 'senha','response'));
+
+
+var_dump($response);
+
+
+return view('InserirConsumidor',$cpf,$DataNasc,$senha);
+
 
 
   

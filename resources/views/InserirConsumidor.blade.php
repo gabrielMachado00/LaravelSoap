@@ -50,7 +50,7 @@ alert("Cadastrado com sucesso!");
 				<label for="TeleFixo">Telefone Fixo:</label>
 
 				<input type="text" name="TeleFixo_DD" required/>
-				<input type="text" id="Telefixo" name="Telefixo" required/>
+				<input type="text" id="Telefixo" name="Telefixo"  required/>
 
 			
 				<label for="Celular">Celular</label>
@@ -70,7 +70,7 @@ alert("Cadastrado com sucesso!");
 				<input type="checkbox" name="AceitaSMS" value="83"/></label>
 				<label for="AceitaEmail">Aceita email:
 				<input type="checkbox" name="AceitaEmail" value="83"/></label>
-				<input type="hidden" name="CPFCadastro" value=""  required/>
+				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
 				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>
 				<input type="hidden" name="SenhaCadastro"  value="{{$senha}}" required/>
 				<input type="hidden" name="NrCentral"  required/>

@@ -62,4 +62,12 @@ class Handler extends ExceptionHandler
 
         return redirect()->guest(route('login'));
     }
+
+    public function handle($request, AuthenticationException $exception)
+{
+    if (Auth::guard($guard)->check()) {
+        return redirect()->route("{$guard}.home");
+    }
+    return $next($request);
+}
 }
