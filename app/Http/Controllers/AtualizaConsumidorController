@@ -52,7 +52,9 @@ $Nrdata=date('Ymd');
 
 $data=date("Y-m-d") . "T" . date("H:i:s");
 
-  
+  $cpf=(int)Request::input('CPF');
+
+
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {
       $service
         ->wsdl('https://sc3.tc2b.net.br/contMSGWEB2/PDVCadastroPFV1.asmx?WSDL')
@@ -81,7 +83,7 @@ $hr_central,
 
  'DESSITE',
 
- Request::input('CPFCadastro'),
+ '$cpf',
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
 
@@ -105,8 +107,7 @@ Request::input('ComplementoEnd'),
  Request::input('Correio'),
  Request::input('AceitaTele'),
  Request::input('AceitaSMS'),
- Request::input('AceitaEmail'),
- Request::input('SenhaCadastro')
+ Request::input('AceitaEmail')
  )
 ]);
 

@@ -54,6 +54,8 @@ $Nrdata=date('Ymd');
 
 $data=date("Y-m-d") . "T" . date("H:i:s");
 
+$cpf=Request::input('CPFCadastro');
+
   
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {
       $service
@@ -68,7 +70,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
  $response = $this->soapWrapper->call('PDVCadastroPFV1.CadastroPF',
   [
-    new Cadastro('DM03306921201R',
+    new Cadastro('ADM03306921201R',
  $Nrdata,
 $data,
 $sessao,
@@ -83,7 +85,7 @@ $hr_central,
 
  'DESSITE',
 
- Request::input('CPFCadastro'),
+ (float)Request::input('DataNascCadastro'),
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
 
@@ -104,14 +106,15 @@ Request::input('ComplementoEnd'),
  Request::input('Email'),
  Request::input('MatInfo'),  
  Request::input('UsoDados'),
- Request::input('Correio'),
- Request::input('AceitaTele'),
+  Request::input('Correio'),
+
+  Request::input('AceitaTele'),
  Request::input('AceitaSMS'),
  Request::input('AceitaEmail'),
  Request::input('SenhaCadastro')
  )
 ]);
 
-    
+    var_dump($response);
   }
 }

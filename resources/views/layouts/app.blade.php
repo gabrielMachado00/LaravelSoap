@@ -10,7 +10,12 @@
 
         <title>{{ config('app.name', 'Merck Cuida') }}</title>
 
-        <!-- Styles -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
+
+
+        <!-- Styles -->     
+        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('css/jquery-ui.min.css') }}" rel="stylesheet">
@@ -24,7 +29,6 @@
 
         <script src="{{ asset('js/jquery.fitvids.js') }}"></script>
         <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
-        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
 
         <!-- Google Analytics Tag -->
         <script>

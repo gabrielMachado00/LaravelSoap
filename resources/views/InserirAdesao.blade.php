@@ -12,6 +12,13 @@
 
 
 
+<script>
+$(document).ready(function(){
+  $('.datanasc').mask('11/11/1111');
+
+});
+</script>
+
 
 <form method="post"> 
 
@@ -22,7 +29,7 @@
 
                                <div class="form-group">
 						<label for="CPF">CPF</label>
-						<input type="text" name="CPF" class="form-control" id="cpf"  required/>
+						<input type="text" name="CPF" id="CPF" class="form-control"  required/>
 
 					</div>
 
@@ -31,8 +38,20 @@
 						<input type="text" id="datanasc" name="datanasc"  required/>
 						<label for="Senha">Senha</label>
 						<input type="password"  name="Senha" id="senha" autocomplete="off" value="" required/>
-						<label for="Produto">Produto</label>
-						<input type="text" id="Produto" list="mk_produtos" name="Produto"  required/>
+		
+
+				<select name="produto" id="produto" class="form-control m-bot15" name="role_id">
+
+                      
+           
+                  
+            @foreach($produtos as $produto)
+            <option value="{{$produto->EAN}}">{{ $produto->DESCRICAO }}</option>    
+                 @endforeach
+                            
+                  
+                      
+                      </select>
 					  <label for="CodProf">Codigo Profissional</label>
 						<input type="text" name="CodProf"  required/>
 						<label for="UFProf">UF Profissional</label>

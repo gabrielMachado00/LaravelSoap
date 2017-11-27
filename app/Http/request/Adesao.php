@@ -21,20 +21,18 @@ protected  $OpcaoOperador ;
 protected $Usuario;
 public $CPFConsumidor;
 public $DataNascConsumidor;
-
+public $Campanha;
 public $ControlePSW;
 protected $Cartao;
 protected $EAN; 
-protected $Campanha;
 protected $CodigoProfissional;
 protected $UFProfissional;
 public $NomeProfissional;
-protected $Lista;
 
 
 
   public function __construct($SeuSistema,$NrLocal,$HoraLocal,$Sessao,$NrCentral,$HoraCentral,$CtlAP,
-    $Administradora,$Terminal,$OrigemServico,$IdOrigem,$OpcaoOperador,$Usuario,$CPFConsumidor,$DataNascConsumidor,$ControlePSW,$Cartao,$EAN,$Campanha,$CodigoProfissional,$UFProfissional,$NomeProfissional,$Lista)
+    $Administradora,$Terminal,$OrigemServico,$IdOrigem,$OpcaoOperador,$Usuario,$CPFConsumidor,$DataNascConsumidor,$ControlePSW,$Cartao,$EAN,$Campanha,$CodigoProfissional,$UFProfissional,$NomeProfissional)
   {    
     $this->SeuSistema  = $SeuSistema;
     $this->NrLocal = $NrLocal;
@@ -53,14 +51,18 @@ protected $Lista;
     $this->DataNascConsumidor = $DataNascConsumidor;
         $this->ControlePSW   = $ControlePSW;
     $this->Cartao= $Cartao;
+
     $this->EAN = $EAN;
-        $this->Campanha    = $Campanha;
+    $this->Campanha = $Campanha;
         $this->CodigoProfissional=$CodigoProfissional;
     $this->UFProfissional = $UFProfissional;
     $this->NomeProfissional= $NomeProfissional;
-       $this->Lista= $Lista;
+
 
   }
+
+
+
 }
   
 

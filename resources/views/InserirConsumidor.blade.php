@@ -5,22 +5,7 @@
    <form action="/Cadastro/Consumidor" method="post">
 
 
-@if($response)
-	
 
-<script>
-	
-
-
-
-alert("Cadastrado com sucesso!");
-
-</script>
-
-
-
-
-@endif
 
 
 

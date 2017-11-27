@@ -19,6 +19,7 @@
       
       Route::post('/Cadastro/Adesao', 'AdesaoController@InserirAdesao');
             
+             Route::get('/Cadastro/Adesao', 'AdesaoController@Index');
 
              Route::get('/Login', 'LoginController@LoginAdd');
       

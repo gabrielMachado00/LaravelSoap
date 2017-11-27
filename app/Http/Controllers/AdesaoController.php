@@ -37,9 +37,29 @@ class AdesaoController
    * Use the SoapWrapper
    */
 
+  
+  public function Index(){
+
+
+$produtos=DB::table('mk_produtos')->get();
+
+
+foreach ($produtos as $produto) {
+  
+
+$descricao=$produto->DESCRICAO;
+
+
+
+}
+
+
+  return view('InserirAdesao',compact('produtos','descricao'));
+
+  }
   public function AddAdesao(){
 
-return View('InserirAdesao');
+return view('InserirAdesao');
   }
 
 
@@ -47,7 +67,7 @@ return View('InserirAdesao');
 
 
 
-  public function InserirAdesao() {
+  public function InserirAdesao(Request $request) {
 
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 
@@ -92,56 +112,79 @@ $Nrdata=date("Ymd");
 $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
+
+
  $response = $this->soapWrapper->call('Adesao.AdesaoPrd',
   [
 
 
-    new Adesao('ADM03306921201R',$Nrdata,$data,
+ new Adesao('ADM03306921201R',$Nrdata,$data,
 
 
-$sessao, '0',Request::input('datanasc'), 'AP00','041', '00000000','66','0', '88','ADESSITE',
- Request::input('CPF') , '2017-11-12T22:54:13', Request::input('Senha'), 
- Request::input('Cartao'), '','', Request::input('CodProf'),
-  Request::input('UFProf'),
- Request::input('NomeProf'),'')
+$sessao, '0',$hr_central, 'AP00','041', '00000000','66',11111111111111, '88','ADESSITE',
+(float)Request::input('CPF'),
+Request::input('datanasc'), Request::input('Senha'), 
+ 0,(float)Request::input('produto'),'',Request::input('CodProf'),
+  Request::input('UFProf'),Request::input('NomeProf'))  
+
+
 
 ]);
 
 
 
+$produtos=DB::table('mk_produtos')->limit(1)->get();
+
 
 
     // Without classmap
-   $adesao= new Adesao('ADM03306921201R',$Nrdata,$data,
+   $adesao=   
+ new Adesao('ADM03306921201R',$Nrdata,$data,
+
+
 $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
-
- Request::input('CPF') , Request::input('datanasc'), Request::input('Senha'), 
-
-
- Request::input('Cartao'), '','', Request::input('CodProf'),
-
-
+42044830892,
+Request::input('datanasc'), Request::input('Senha'), 
+ Request::input('Cartao'),'7891721017261','','11364',
   Request::input('UFProf'),
-
- Request::input('NomeProf'),'');
-
+ Request::input('NomeProf'));
 
 
 
 
 
+
+
+
+
+$produtos=DB::table('mk_produtos')->get();
+
+
+foreach ($produtos as $produto) {
+  
+
+$descricao=$produto->DESCRICAO;
+
+
+
+}
+
+
+
+
+  $cuida=DB::table('mk_integrador')->limit(1)->get();
+
+
+var_dump($response);
 
 
 $cpf=$adesao->CPFConsumidor;
 $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 
-
-
-var_dump($response);
-
-
-return view('InserirConsumidor',$cpf,$DataNasc,$senha);
+$select= Request::input('produto');
+var_dump($select);
+return view('InserirAdesao',compact('produtos','descricao'));
 
 
 
