@@ -5,6 +5,8 @@ use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Illuminate\Http\RedirectResponse ;
+use App\Http\request\AdesaoTable;
+
 use Request;
 class AtualizaConsumidorController
 {
@@ -107,7 +109,7 @@ Request::input('ComplementoEnd'),
  Request::input('Correio'),
  Request::input('AceitaTele'),
  Request::input('AceitaSMS'),
- Request::input('AceitaEmail')
+ Request::input('AceitaEmail'),
  )
 ]);
 

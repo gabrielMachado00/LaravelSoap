@@ -59,9 +59,9 @@ $cpf=Request::input('CPFCadastro');
   
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {
       $service
-        ->wsdl('https://sc3.tc2b.net.br/contMSGWEB2/PDVCadastroPFV1.asmx?WSDL')
+        ->wsdl('https://security.tc2b.com.br/PDVCadastroPFV1.asmx?WSDL')
         ->trace(true)
-         ->cache(WSDL_CACHE_NONE) 
+      
     ->classmap([
         Cadastro::class,
         ]);
@@ -70,22 +70,13 @@ $cpf=Request::input('CPFCadastro');
 
  $response = $this->soapWrapper->call('PDVCadastroPFV1.CadastroPF',
   [
-    new Cadastro('ADM03306921201R',
- $Nrdata,
-$data,
-$sessao,
- '1',
-$hr_central,
- 'AP00',
- '041',
- '1',
-'66',
-  '11111111111111',
-'88',
+    new Cadastro('ADM03306921201R',$Nrdata,$data,
 
- 'DESSITE',
 
- (float)Request::input('DataNascCadastro'),
+$sessao, 0
+,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
+(float)Request::input('CPFCadastro'),
+
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
 
@@ -99,10 +90,10 @@ $hr_central,
  Request::input('Logradouro'),
  Request::input('Numero'),
 Request::input('ComplementoEnd'),
- Request::input('Celular_DD'),
- Request::input('Celular'),
-  Request::input('TeleFixo_DD'),
-  Request::input('Telefixo'),
+Request::input('Celular_DD'),
+Request::input('Celular'),
+Request::input('TeleFixo_DD'),
+Request::input('Telefixo'),
  Request::input('Email'),
  Request::input('MatInfo'),  
  Request::input('UsoDados'),
@@ -112,6 +103,9 @@ Request::input('ComplementoEnd'),
  Request::input('AceitaSMS'),
  Request::input('AceitaEmail'),
  Request::input('SenhaCadastro')
+
+
+ 
  )
 ]);
 

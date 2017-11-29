@@ -118,13 +118,13 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
   [
 
 
- new Adesao('ADM03306921201R',$Nrdata,$data,
+ new Adesao('ADM03306921201R',(int)$Nrdata,$data,
 
 
-$sessao, '0',$hr_central, 'AP00','041', '00000000','66',11111111111111, '88','ADESSITE',
+$sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 (float)Request::input('CPF'),
 Request::input('datanasc'), Request::input('Senha'), 
- 0,(float)Request::input('produto'),'',Request::input('CodProf'),
+0,(float)Request::input('produto'),'',Request::input('CodProf'),
   Request::input('UFProf'),Request::input('NomeProf'))  
 
 
@@ -143,7 +143,7 @@ $produtos=DB::table('mk_produtos')->limit(1)->get();
 
 
 $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
-42044830892,
+(float)Request::input('CPF'),
 Request::input('datanasc'), Request::input('Senha'), 
  Request::input('Cartao'),'7891721017261','','11364',
   Request::input('UFProf'),
@@ -182,9 +182,7 @@ $cpf=$adesao->CPFConsumidor;
 $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 
-$select= Request::input('produto');
-var_dump($select);
-return view('InserirAdesao',compact('produtos','descricao'));
+return view('InserirConsumidor',compact('response','cpf','DataNasc','senha','produtos','descricao'));
 
 
 
