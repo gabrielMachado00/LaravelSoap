@@ -9,7 +9,7 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "artisaninweb/laravel-soap": "0.3.*",
-      "nesbot/carbon": "~1.21",
+      "nesbot/carbon": "~1.21"
 	  
     },
     "require-dev": {

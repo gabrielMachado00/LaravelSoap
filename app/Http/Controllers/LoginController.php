@@ -80,7 +80,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
     new ConsultaAdesao('ADM03306921201R',$Nrdata,$data,$sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE','0',
- Request::input('CPF'),Request::input('Senha'),'0', '0','0')
+ (float)Request::input('CPF'),Request::input('Senha'),'0', '0','0')
 
 
 
@@ -91,30 +91,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
 
-
-foreach ($response as $row){
-
-
-$dataNasc=$row->DataNascimento;
-$NomeConsumidor=$row->NomeConsumidor;
-$cartao=$row->Cartao;
-$Ean=$row->EAN;
-$campanha=$row->Campanha;
-$QtdLiberada=$row->QtdLiberada;
-$QtdLimite=$row->QtdLimite;
-$Desconto=$row->Desconto/100."%";
-$DataLiberacao=$row->DataLiberacao;
-$QtdProxLiberacao=$row->QtdProxLiberacao;
-$DataCompra=$row->DataCompra;
-$DataProxCompra=$row->DataProxCompra;
-
-
-
- $request->session()->push([$dataNasc, $NomeConsumidor, $cartao, $Ean, $campanha, $QtdLiberada, $QtdLimite, $Desconto,$DataLiberacao,$QtdProxLiberacao,$DataCompra,$DataProxCompra);
-
-
-var_dump($row->DataNascConsumidor);
-
+var_dump($response);
 
 
 return view('AtualizaAdesao');
@@ -133,8 +110,6 @@ return view('AtualizaAdesao');
 
 
 
-$cpf=$response->session()->get('cpf');
-
 
 
   
@@ -147,4 +122,4 @@ $cpf=$response->session()->get('cpf');
 
 
 
-}
+

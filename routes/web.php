@@ -24,6 +24,7 @@
              Route::get('/Login', 'LoginController@LoginAdd');
       
       Route::post('/Login', 'LoginController@Login');
+
             
             
 Route::get('/', function () {
@@ -31,8 +32,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@Home')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'HomeController@Home')->name('home');

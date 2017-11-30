@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-<head>
-   <meta charset="utf-8">
+<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSRF Token -->
+
+        <link href="{{asset('css/Home.css')}" media="all" rel="stylesheet" type="text/css" />
         <meta name="csrf-token" content="{{ csrf_token() }}">       
 
         <title>{{ config('app.name', 'Merck Cuida') }}</title>
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.js"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
 
-
-        <!-- Styles -->     
-        <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui.structure.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('/css/jquery.bxslider.min.css') }}" rel="stylesheet">
+
         <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
 
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
 
-        <script src="{{ asset('js/jquery.fitvids.js') }}"></script>
+        <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
         <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
 
         <!-- Google Analytics Tag -->
@@ -39,6 +33,5 @@
             ga('create', 'UA-85848600-2', 'auto');
             ga('send', 'pageview');
         </script>
-</head>
 
 </html>

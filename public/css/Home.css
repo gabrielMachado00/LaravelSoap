@@ -1,0 +1,80 @@
+body {
+	height: 100%;
+	background-image: url(../img/plantas.png);
+	background-position: top center;
+background-size: cover;
+  position: absolute;
+}
+
+
+.btnCadastrar .btn-outline-secondary{
+
+
+	
+	border-radius: 10px;
+	position: absolute;
+	top: 75%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
+    padding:10px;
+    color:white;
+    border-color: rgb(245, 245, 245);
+    width:150px; 
+    transition: .5s;
+}
+
+.btnCadastrar button{
+
+
+	
+
+	position: absolute;
+	top: 75%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
+    padding:10px;
+    color:white;
+    border-color: rgb(245, 245, 245);
+    width:150px; 
+    transition: .5s;
+}
+
+
+
+.btnLogin .btn-secondary {
+
+width:140px; 
+
+}
+
+.btnLogin .btn-primary {
+	color:white;
+border-color:rgb(90, 41, 148);
+background-color: rgb(90, 41, 148);
+	padding: 12px;
+
+	border-radius: 10px;
+	position: absolute;
+	top: 75%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+
+
+	}
+
+.btnLogin button  {
+	color:white;
+border-color:rgb(90, 41, 148);
+background-color: rgb(90, 41, 148);
+	padding: 12px;
+
+	border-radius: 10px;
+	position: absolute;
+	top: 75%;
+	left: 63%;
+	transform: translate(-50%, -50%);
+	transition: .3s;
+}
+

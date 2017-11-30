@@ -24,7 +24,7 @@ public $DataNascConsumidor;
 public $Campanha;
 public $ControlePSW;
 protected $Cartao;
-protected $EAN; 
+public $EAN; 
 protected $CodigoProfissional;
 protected $UFProfissional;
 public $NomeProfissional;

@@ -70,12 +70,9 @@ $cpf=Request::input('CPFCadastro');
 
  $response = $this->soapWrapper->call('PDVCadastroPFV1.CadastroPF',
   [
-    new Cadastro('ADM03306921201R',$Nrdata,$data,
-
-
-$sessao, 0
-,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
-(float)Request::input('CPFCadastro'),
+    new Cadastro('ADM03306921201R',(int)$Nrdata,$data,
+$sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
+63287312642,
 
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
@@ -90,10 +87,10 @@ $sessao, 0
  Request::input('Logradouro'),
  Request::input('Numero'),
 Request::input('ComplementoEnd'),
-Request::input('Celular_DD'),
-Request::input('Celular'),
-Request::input('TeleFixo_DD'),
-Request::input('Telefixo'),
+(int)Request::input('Celular_DD'),
+(float)Request::input('Celular'),
+(int)Request::input('TeleFixo_DD'),
+(float)Request::input('Telefixo'),
  Request::input('Email'),
  Request::input('MatInfo'),  
  Request::input('UsoDados'),

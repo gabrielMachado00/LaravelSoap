@@ -73,6 +73,8 @@ alert("Cadastrado com sucesso!");
 				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
 				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>
 				<input type="hidden" name="SenhaCadastro"  value="{{$senha}}" required/>
+				<input type="hidden" name="Descricao"  value="{{$descricao}}" required/>
+				<input type="hidden" name="Ean"  value="{{$ean}}" required/>
 				<input type="hidden" name="NrCentral"  required/>
 				<input type="submit" name="submit2" value="Enviar"/>
 			</form>
