@@ -8,23 +8,23 @@
         <!-- CSRF Token -->
 
         <link href="{!! asset('css/Home.css') !!}" media="all" rel="stylesheet" type="text/css" />
+      <link href="{{asset('bootstrap/bootstrap.css')}}" media="all" rel="stylesheet" type="text/css" />
+      <link href="{{asset('bootstrap/bootstrap.min')}}" media="all" rel="stylesheet" type="text/css" />
+
         <meta name="csrf-token" content="{{ csrf_token() }}">       
 
         <title>{{ config('app.name', 'Merck Cuida') }}</title>
 
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
         <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
 
         <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=" crossorigin="anonymous"></script>
 
+     
         <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/jquery.bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
-
         <!-- Google Analytics Tag -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

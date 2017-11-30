@@ -22,17 +22,21 @@
              Route::get('/Cadastro/Adesao', 'AdesaoController@Index');
 
              Route::get('/Login', 'LoginController@LoginAdd');
-      
+
+
+
       Route::post('/Login', 'LoginController@Login');
 
             
+
+
+             Route::get('/Sobre', 'SobreController@Sobre');
             
 Route::get('/', function () {
     return view('welcome');
 });
 
 
-Route::get('/home', 'HomeController@Home')->name('home');
 
 
 

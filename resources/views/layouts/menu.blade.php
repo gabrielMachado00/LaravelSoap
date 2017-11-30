@@ -1,32 +1,24 @@
+    
+
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-
-<meta charset="utf-8">
-
+<head>
+   <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <link href="{!! asset('css/app.css') !!}" media="all" rel="stylesheet" type="text/css" />
+        <!-- CSRF Token -->
 
-       <!-- CSRF Token -->
-      <link href="{{asset('bootstrap/bootstrap.css')}" media="all" rel="stylesheet" type="text/css" />
-      <link href="{{asset('bootstrap/bootstrap.min')}" media="all" rel="stylesheet" type="text/css" />
-
-        <link href="{{asset('css/Home.css')}" media="all" rel="stylesheet" type="text/css" />
-        <meta name="csrf-token" content="{{ csrf_token() }}">       
-
-        <title>{{ config('app.name', 'Merck Cuida') }}</title>
-
-
-        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{!! asset('css/menu.css') !!}" media="all" rel="stylesheet" type="text/css" />
+   <link href="{ asset('bootstrap/bootstrap.css')}" media="all" rel="stylesheet" type="text/css" />
+      <link href="{ asset('bootstrap/bootstrap.min')}" media="all" rel="stylesheet" type="text/css" />
 
         <!-- Scripts -->
 
-     
         <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.js') }}"></script>
-        <script src="{{ asset('js/jquery.bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
+     <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/jquery.bootstrap.min.js') }}"></script>
 
         <!-- Google Analytics Tag -->
         <script>
@@ -37,5 +29,18 @@
             ga('create', 'UA-85848600-2', 'auto');
             ga('send', 'pageview');
         </script>
+</head>
 
 </html>
+
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+            <ul class="menu">
+
+                <li><a href="#">Home</a></li>|
+                <li><a href="#">Sobre</a></li>|
+                <li><a href="#">Redes Credenciadas</a></li>|
+                <li><a href="#">Blog-Cuide-se</a></li>|
+                  <li><a href="#">Dúvidas</a></li>
+            </ul>
+        </nav>
