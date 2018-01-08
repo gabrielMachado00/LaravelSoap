@@ -7,7 +7,6 @@
 
 
 
-        @section('content')
 
 
 
@@ -63,6 +62,3 @@ $(document).ready(function(){
 
 <button class="btn btn-primary"  id="btnMensagem" data-toggle="modal" data-target="#modal-mensagem">Exibir mensagem</button>
 					</form>
-
-   @show
-    

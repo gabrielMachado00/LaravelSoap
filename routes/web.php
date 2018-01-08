@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,20 +25,25 @@
              Route::get('/Login', 'LoginController@LoginAdd');
 
 
-
-      Route::post('/Login', 'LoginController@Login');
-
-            
+  Route::get('/Sobre', 'SobreController@Sobre');
+  
 
 
-             Route::get('/Sobre', 'SobreController@Sobre');
-            
-Route::get('/', function () {
-    return view('welcome');
-});
+
+  Route::get('/VerLoja', 'MapsController@Import');
+  
+  Route::post('/VerLoja', 'MapsController@Import');
+  
+  Route::get('/getMapa', 'MapsController@getMapa');
 
 
+Route::get('/home', 'HomeController@Home')->name('home');
 
 
 
 Route::get('/home', 'HomeController@Home')->name('home');
+
+
+	Route::get('export','MapsController@exportData');
+
+	Route::post('export','MapsController@exportData');

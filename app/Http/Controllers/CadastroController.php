@@ -72,7 +72,7 @@ $cpf=Request::input('CPFCadastro');
   [
     new Cadastro('ADM03306921201R',(int)$Nrdata,$data,
 $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
-63287312642,
+42044830892,
 
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),

@@ -1,0 +1,375 @@
+
+.bg-color
+{
+	    background-size: cover;
+    background-color: #ffc90d;
+
+}
+
+@font-face {
+    font-family: 'merck';
+    src: url('/fonts/Merck.otf');
+}
+body {
+	line-height: 1.4;
+	font-family: 'Arial', sans-serif;
+   
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+#Busca2 p{
+
+  font-size: 30px;
+font-weight: 100;
+font-family:'merck';
+margin-left: 50px;
+
+color: #5a2994;
+
+}
+
+
+#Busca2{
+
+  font-size: 50px;
+font-weight: 200;
+font-family:'merck';
+margin-left: 80px;
+
+color: #5a2994;
+
+}
+#Busca p{
+
+  margin-left: 130px;
+}
+
+#Busca{
+
+	font-size: 50px;
+font-weight: 900;
+font-family:'merck';
+
+margin-top: 100px;
+color: #5a2994;
+}
+
+.cadastro{
+display: inline-block;
+
+  margin-left: 150px;
+margin-top: 30px;
+  border: 1.3px solid #fff;
+  color: #fff;
+      width: 100px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+ font-size: 12px;
+border-radius: 6px;
+
+}
+.btn-cadastro {
+
+
+color: white;
+
+}
+.textoMerck p{
+margin-left: -195px !important;
+color:white;
+font-family:'merck';
+}
+.bulario{
+  border: 1.4px solid #94cf43;
+  color: #94cf43;
+  text-align: center;
+ font-size: 12px;
+      width: 80px;
+height: 25px;
+margin-right: 10px;
+border-radius: 6px;
+margin-top: 30px;
+display: inline-block;
+}
+
+.bulario a{
+color: #94cf43;
+}
+
+ .login  a{
+color: #5c2791;
+
+margin-right:0px;
+}
+
+footer {
+    background-color: #5c2791;
+    padding: 20px 0 0;
+}
+
+
+.login{
+ background: #94cf43;
+  border: 2px solid #94cf43;
+  color: #5c2791;
+  width: 80px;
+   font-size: 12px;
+   font-weight:bold; 
+text-align:center;
+height: 25px;
+border-radius: 6px;
+margin-top: 30px;
+}
+
+.row .fa{
+
+margin-top: 30px;
+color:#ffc90d;
+margin-left: 50px;
+
+}
+
+.sac p{
+
+font-size: 25px;
+	color: white;
+	font-family:'merck';
+  margin-top: 20px;
+}
+.sac2{
+font-size: 20px;
+	color: white;
+	font-family:'merck';
+}
+
+label{
+color: #5b2a95;
+font-size: 15px;
+  vertical-align:left;
+font-weight: 700;
+
+
+}
+ul li {
+  float: left;
+}
+
+ #Texto{
+font-size: 50px;
+font-weight: 900;
+font-family:'merck';
+margin-left: 80px;
+margin-top: 200px;
+
+}
+#selectCor{
+
+
+
+}
+
+.header{
+    background-size: cover;
+    min-height: 650px;
+
+    position: relative;
+}
+    #map {
+ margin: 0;
+  padding: 0;
+  height: 60%;
+    width: 70%;
+    margin-top: 40px;
+  margin-right: 80px;
+       }
+  #map img {
+      max-width: none;
+      
+       }
+
+#roxo{
+
+   margin-top: 20px;
+   color: #5b2a95;
+    margin-left: 80px;
+        
+}
+ img {
+
+    margin-top: 50px;
+height:370px; 
+  
+width:400px;  
+}
+
+.raio2 {
+
+margin-right: 300px;
+margin-top: 30px;
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+  
+.corFoco
+
+{
+
+background-color:#ffc90d;
+
+}
+
+.tst1{
+	margin-right: -80px !important;
+	display: inline-block;
+}
+
+.row select{
+border-color: #5b2a95;
+border-radius:6px;
+border-width:2px;
+background-color:#ffc90d;	 
+ margin-top: 0px;
+  	border-radius: 8px; 
+margin-left: 20px;
+  	margin-top: 30px;
+  	margin-bottom:0px;
+}
+
+.col-md-3 .resultados .form-inline  label{
+margin-left: 50px;
+margin-top: 30px;
+}
+.col-md-2 .pesquisa{
+
+
+}
+
+button{
+
+border-radius: 8px;
+margin-left: 100px;
+
+}
+.col-md-3 .raio .form-inline  label{
+
+margin-left:  150px;
+margin-top: 30px;
+
+}
+button{
+  border-color:#5a2994;
+  background-color:#5a2994;
+  border-width: 2px;
+  height: 40px;
+  border-width: 2px;
+width: 100px;
+  margin-right: 200px;
+  border-radius: 8px;
+}
+
+
+
+.col-md-3 .resultados .form-inline   select{
+
+width: 100px;  
+
+border-color: #5b2a95;
+border-radius:6px;
+border-width:3px;
+background-color:#ffc90d;  
+ margin-top: 0px;
+    border-radius: 8px; 
+
+    margin-top: 30px;
+    margin-bottom:0px;
+}
+
+.col-md-3 .raio .form-inline   select{
+
+width: 100px;  
+
+border-color: #5b2a95;
+border-radius:6px;
+border-width:3px;
+background-color:#ffc90d;  
+ margin-top: 0px;
+    border-radius: 8px; 
+margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom:0px;
+}
+
+
+.labal{
+margin-left: 20px !important;
+margin-top: 40px;
+  vertical-align: left;
+}
+
+.cadastro a{
+
+  width: 50px;
+}
+
+  .row input{
+
+
+border-color: #5b2a95;
+border-radius:6px;
+border-width:3px;
+background-color:#ffc90d;	 
+  	width:350px;
+  	border-radius: 8px; 
+margin-top: 30px;
+margin-left: 120px;
+  }
+  
+  #TextoMerck{
+
+   
+font-family: "Merck";
+
+    font-size:55px; 
+    font-weight: 900;
+    color: #5a2994;
+    
+
+  }
+
+.text-left{
+
+    color:white;
+
+  }
+  .nav{
+
+margin-left: 200px;
+
+  }
+ 
+
+.container h2{
+
+  color:rgb(90, 41, 148);
+
+  font-weight: 900;
+
+letter-spacing:3px; 
+
+
+
+  }

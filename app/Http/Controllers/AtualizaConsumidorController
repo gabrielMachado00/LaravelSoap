@@ -54,7 +54,6 @@ $Nrdata=date('Ymd');
 
 $data=date("Y-m-d") . "T" . date("H:i:s");
 
-  $cpf=(int)Request::input('CPF');
 
 
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {

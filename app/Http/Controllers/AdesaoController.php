@@ -183,6 +183,8 @@ $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 $ean=$adesao->EAN;
 
+
+
 return view('InserirConsumidor',compact('response','cpf','ean','DataNasc','senha','produtos','descricao'));
 
 

@@ -12,7 +12,7 @@ try {
   
 
    
-    require('bootstrap-sass');
+    require('bootstrap');
 } catch (e) {}
 
 /**

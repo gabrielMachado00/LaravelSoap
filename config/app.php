@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('Cuida', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -147,9 +147,12 @@ return [
         Illuminate\Cache\CacheServiceProvider::class,
         Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
+        Jcf\Geocode\GeocodeServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
         Illuminate\Encryption\EncryptionServiceProvider::class,
+         Geocoder\Laravel\Providers\GeocoderService::class,
         Illuminate\Filesystem\FilesystemServiceProvider::class,
+        Toin0u\Geotools\GeotoolsServiceProvider::class,
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
         Illuminate\Mail\MailServiceProvider::class,
@@ -166,7 +169,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Artisaninweb\SoapWrapper\ServiceProvider::class,
-
+        Maatwebsite\Excel\ExcelServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -204,7 +207,10 @@ return [
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
-        'Crypt' => Illuminate\Support\Facades\Crypt::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Geocode' => Jcf\Geocode\Facades\Geocode::class,
+'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
+   'Crypt' => Illuminate\Support\Facades\Crypt::class,
         'DB' => Illuminate\Support\Facades\DB::class,
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facade::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
