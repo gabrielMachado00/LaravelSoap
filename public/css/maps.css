@@ -71,14 +71,41 @@ text-align: center;
 border-radius: 6px;
 
 }
+
+.Login{
+ background: #94cf43;
+  border: 2px solid #94cf43;
+  color: #5c2791;
+  width: 80px;
+   font-size: 12px;
+   font-weight:bold; 
+   margin-top: 30px;
+
+text-align:center;
+height: 25px;
+border-radius: 6px;
+
+
+
+}
 .btn-cadastro {
 
 
 color: white;
 
 }
-.textoMerck p{
-margin-left: -195px !important;
+.textoMerck1 p{
+
+
+
+margin-left: 210px;
+margin-top: 30px;
+color:white;
+font-family:'merck';
+}
+.textoMerck2 p{
+margin-left: 150px;
+
 color:white;
 font-family:'merck';
 }
@@ -89,7 +116,7 @@ font-family:'merck';
  font-size: 12px;
       width: 80px;
 height: 25px;
-margin-right: 10px;
+margin-left: 160px;
 border-radius: 6px;
 margin-top: 30px;
 display: inline-block;
@@ -99,11 +126,7 @@ display: inline-block;
 color: #94cf43;
 }
 
- .login  a{
-color: #5c2791;
 
-margin-right:0px;
-}
 
 footer {
     background-color: #5c2791;
@@ -111,17 +134,8 @@ footer {
 }
 
 
-.login{
- background: #94cf43;
-  border: 2px solid #94cf43;
-  color: #5c2791;
-  width: 80px;
-   font-size: 12px;
-   font-weight:bold; 
-text-align:center;
-height: 25px;
-border-radius: 6px;
-margin-top: 30px;
+.col-sm-4 .cadastro .btn-Login{
+
 }
 
 .row .fa{
@@ -161,8 +175,6 @@ ul li {
 font-size: 50px;
 font-weight: 900;
 font-family:'merck';
-margin-left: 80px;
-margin-top: 200px;
 
 }
 #selectCor{
@@ -249,25 +261,29 @@ margin-left: 20px;
   	margin-bottom:0px;
 }
 
-.col-md-3 .resultados .form-inline  label{
-margin-left: 50px;
-margin-top: 30px;
+.col-xs-3  .resultados .form-inline  label{
+margin-left: 20px;
+margin-top: 50px;
 }
 .col-md-2 .pesquisa{
 
 
 }
+.col-xs-3 .form-group button{
 
+  margin: 50px;
+
+}
 button{
 
 border-radius: 8px;
 margin-left: 100px;
 
 }
-.col-md-3 .raio .form-inline  label{
+.col-xs-3  .raio .form-inline  label{
 
-margin-left:  150px;
-margin-top: 30px;
+margin-left:  20px;
+margin-top: 50px;
 
 }
 button{
@@ -283,7 +299,7 @@ width: 100px;
 
 
 
-.col-md-3 .resultados .form-inline   select{
+.col-xs-3 .resultados .form-inline   select{
 
 width: 100px;  
 
@@ -291,14 +307,14 @@ border-color: #5b2a95;
 border-radius:6px;
 border-width:3px;
 background-color:#ffc90d;  
- margin-top: 0px;
+
     border-radius: 8px; 
 
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom:0px;
 }
 
-.col-md-3 .raio .form-inline   select{
+.col-xs-3 .raio .form-inline   select{
 
 width: 100px;  
 
@@ -309,7 +325,7 @@ background-color:#ffc90d;
  margin-top: 0px;
     border-radius: 8px; 
 margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom:0px;
 }
 
@@ -327,18 +343,18 @@ margin-top: 40px;
 
   .row input{
 
-
+display: inline-block;
 border-color: #5b2a95;
 border-radius:6px;
 border-width:3px;
 background-color:#ffc90d;	 
   	width:350px;
   	border-radius: 8px; 
-margin-top: 30px;
+margin-top: 50px;
 margin-left: 120px;
   }
   
-  #TextoMerck{
+  #TextoMerck {
 
    
 font-family: "Merck";
@@ -346,7 +362,7 @@ font-family: "Merck";
     font-size:55px; 
     font-weight: 900;
     color: #5a2994;
-    
+margin-left: 200px;
 
   }
 

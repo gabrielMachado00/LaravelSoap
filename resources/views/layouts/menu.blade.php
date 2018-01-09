@@ -13,13 +13,12 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-center">
-                  <li class=""><a href="#main-header">Home</a></li>
-                  <li class=""><a href="#feature">About</a></li>
-                  <li class=""><a href="#service">Services</a></li>
-                  <li class=""><a href="#portfolio">Portfolio</a></li>
-                  <li class=""><a href="#testimonial">Testimonial</a></li>
-                  <li class=""><a href="#blog">Blog</a></li>
-                  <li class=""><a href="#contact">Contact Us</a></li>
+                  <li class=""><a href="{{ url('Login') }}">Home</a></li>
+                  <li class=""><a href="{{ url('Sobre') }}">Sobre</a></li>
+                  <li class=""><a href="{{ url('ProcureLoja') }}">Redes Credenciadas</a></li>
+                  <li class=""><a href="#portfolio">Blog-Cuide-se</a></li>
+                  <li class=""><a href="#testimonial">Dúvidas</a></li>
+                 
                 </ul>
               </div>
             </div>

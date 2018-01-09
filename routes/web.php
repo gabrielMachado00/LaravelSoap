@@ -25,16 +25,21 @@
              Route::get('/Login', 'LoginController@LoginAdd');
 
 
-  Route::get('/Sobre', 'SobreController@Sobre');
-  
-
+  Route::get('/CuideSe', 'CuideController@Cuide');
 
 
   Route::get('/VerLoja', 'MapsController@Import');
   
   Route::post('/VerLoja', 'MapsController@Import');
   
-  Route::get('/getMapa', 'MapsController@getMapa');
+
+
+
+  Route::get('/Sobre', 'SobreController@Sobre');
+  
+  Route::post('/VerLoja', 'MapsController@Import');
+  
+  Route::get('/ProcureLoja', 'MapsController@getMapa');
 
 
 Route::get('/home', 'HomeController@Home')->name('home');

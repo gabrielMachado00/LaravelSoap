@@ -1,6 +1,8 @@
 
        @extends('layouts.maps')
 
+
+
 @section('content')
 
 
@@ -11,11 +13,12 @@
 
   
          <div class="row no-gutters">
-   <div class="col-md-12">
+
+   <div class="col-xs-12">
 <div id="Busca">
 <p>Busca </p>
 </div>
-
+g
 <div id="Busca2">
 <p>de redes Credenciadas</p>
 </div>
@@ -27,23 +30,25 @@
 
             <div class="row no-gutters">
 
-     <div class="col-md-3">
-
+     <div class="col-xs-3">
+  <form class="form-inline" role="form">
 <div class="form-group">
 
 <input type="text" id="search" name="buscar" class="form-control">
 </div>
 
-
+ </form>
        </div>
 
 
-     <div class="col-md-3 offset-sm-1">
+     <div class="col-xs-3 offset-sm-1">
+
      <div class="raio" > 
+
 <div class="form-inline" >
 
 
-             <label >Memory</label>
+             <label >Raio</label>
         <select id="memoryType"  class="form-control">
 
             <option value="GB" selected="selected">100</option>
@@ -57,7 +62,7 @@
 </div>
 
 
-     <div class="col-md-3 no-gutters">
+     <div class="col-xs-3">
 <div class="resultados" >
 
     <div class="form-inline">
@@ -75,7 +80,7 @@
 </div>
 
 
-     <div class="col no-gutters">
+     <div class="col-xs-3">
       
 <div class="form-group" >
 <button type="submit" class="fa fa-search fa-lg" >
@@ -90,15 +95,14 @@
 
 </div>
 
-
     <div class="row">
-   <div class="col-md-6">
+   <div class="col-xs-6 ">
 
 <img src="img/garotinha.png" height="42" width="42">
 
 
 </div>
-   <div class="col-md-6">
+   <div class="col-md-6 offset-md-2">
 
 
 
@@ -117,8 +121,9 @@
 <footer>
 
       <div class="container">
+        <form class="form form-inline" role="form">
         <div class="row no-gutters">
-          <div class="col-md-3">
+          <div class="col-xs-3">
 
 
 
@@ -140,36 +145,58 @@
          
     </div>
 
-      <div class="col-sm-4">
+
+      <div class="col-xs-2">
+        <div class="form-inline">
         <div class="cadastro">
       <a href="#services" class="btn-Cadastro">Cadastre-se</a>
-      </div>
- </div>
-       <div class="col-md-2">
-
-         <div class="login">
-   <a href="#services" class="btn-Login">Login</a>
    </div>
+      </div>
+       </div>
+
+
+         <div class="col-xs-2">
+                 <div class="form-inline">
+   <div class="Login">
+            <a  href="#services" class="btn-Login">Login</a>
+          </div>
+
  </div>
-      <div class="col-md-2">
+
+
+ </div>
+
+
+
+      <div class="col-xs-1">
 
          <div class="bulario">
       <a href="#services" class="btn-Bulario">Bulário</a>
    </div>
 
- </div>
-                 <div class="col-sm-4 -1 text-left">
-<div class="textoMerck"> 
 
-      </div>
+ </div>
+
+      
 
     
-        </div>
+           <div class="col-xs-3">
+ <div class="TextoMerck1">
+   
+    <p>M</p>
+    <div>
 
 
 
-       </div>
-       </div>
+    <div class="TextoMerck2">
+     <p>Merck Atende</p>
+</div>
+
+      </div>
+  
+
+
+ </form>
 
 
           </div>
