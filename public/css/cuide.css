@@ -8,10 +8,16 @@
     font-family: 'merck';
     src: url('/fonts/Merck.otf');
 }
+.tamanhoImagem{
 
+  
+width: 100px;
+height: 70px;
+
+}
 p.veja{
 
-    color: #5a2994;
+color:#5a2994;  
 }
 
 .btn-circle {
@@ -24,6 +30,7 @@ margin-left: -100px !important;
     border-radius: 70px;
     text-align: center;
     font-size: 12px;
+    color: white;
 }
 .btn-circle2 {
     background-color: #5b2a95;
@@ -35,6 +42,7 @@ margin-left: 110px;
     border-radius: 70px;
     text-align: center;
     font-size: 12px;
+    color: white;
 
 }
 
@@ -60,19 +68,78 @@ background-color: #5b2a95;
     padding: 6px 0px;
     border-radius: 60px;
 text-align: center;
- 
+ color: white;
     display:inline-block;
-    font-size: 12px;
+ font-size:14px; 
+
 }
 
 
- a.btn-circle3
+
+.btn-circle p{
+margin-top: 40px;
+font-size:14px; 
+}
+
+.btn-circle2 p{
+
+margin-top: 40px;
+color: white;
+font-size:14px; 
+}
+.btn-circle3 p:first-child
 {
 
+margin-top: 25px;
+color: white;
+font-size:14px; 
+}
 
+
+.btn-circle3 p
+{
+
+margin-top: -10px;
+color: white;
+font-size:14px; 
+}
+
+.btn-circle4 p{
+margin-top: 50px;
+color: white;
+font-size:14px; 
 
 }
 
+.btn-circle5 p{
+margin-top: 30px;
+color: white;
+font-size:14px; 
+}
+
+.btn-circle6 p:first-child {
+margin-top: 25px;
+color: white;
+font-size:14px; 
+}
+
+.btn-circle6 p{
+margin-top: -10px;
+color: white;
+font-size:14px; 
+}
+
+
+.btn-circle7 p:first-child {
+margin-top: 30px;
+color: white;
+font-size:13px; 
+}
+.btn-circle7 p{
+margin-top: -5px;
+color: white;
+font-size:13px; 
+}
 
 
 .btn-circle4{
@@ -140,6 +207,7 @@ width: 100px;
 
 h2.bnr-Escolha{
 
+color:#5a2994;
 font-size: 45px;
 margin-top: 0px;
    font-family: 'merck';
@@ -147,6 +215,7 @@ font-weight: 100px;
 
 }
 h2.bnr-Tags {
+    color:#5a2994;
 font-size: 45px;
    margin-bottom: : 20px;
    font-family: 'merck';
@@ -369,7 +438,7 @@ margin-left: 200px;
 
 .container h2{
 
-  color:rgb(90, 41, 148);
+
 
   font-weight: 900;
 
@@ -540,7 +609,21 @@ features
 ***********************************/
 .title, .service-title
 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'merck';
+    font-size: 35px;
+    text-transform: uppercase;
+    color:#94cf43;
+}
+
+.service-title .pad-bt15{
+
+
+}
+.title, .service-title1
+{
+    color:#94cf43;
+    margin-top: -20px;
+    font-family: 'merck';
     font-size: 35px;
     text-transform: uppercase;
 }

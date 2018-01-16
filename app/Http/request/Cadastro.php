@@ -41,8 +41,7 @@ protected $AceitaFone;
 protected $AceitaSMS;
 protected $AceitaEmail;
 protected $Senha;
-
-
+protected $ean;
   public function __construct($SeuSistema,$NrLocal,$HoraLocal,$Sessao,$NrCentral,$HoraCentral,$CtlAP,
     $Administradora,$Terminal,$OrigemServico,$IdOrigem,$OpcaoOperador,$Usuario,$CPFConsumidor,$DataNascConsumidor,$NomeConsumidor,$Sexo,$CEPConsumidor,$UFConsumidor,$CidadeConsumidor,$BairroConsumidor,$TipoLogradouroConsumidor,$LogradouroConsumidor,$NrEnderConsumidor,$ComplEnderConsumidor,$DDDCelular,$FoneCelular, $DDDFixo ,$FoneFixo,$EmailConsumidor,$AceitaMaterialInformativo,$AceitaUsodosDados,$AceitaCorreio,$AceitaFone,$AceitaSMS, $AceitaEmail,$ControlePSW)
   {    

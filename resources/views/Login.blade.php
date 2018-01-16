@@ -1,51 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-        @include('layouts.Login')
-</head>
-
-<body>
-  <div id="preloader"></div>
-
-  <!--==========================
-  Hero Section
-  ============================-->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="wow fadeIn">
+  
    
+  @extends('layouts.adesao')
 
-        <h1>MCuida</h1>
-        <h2>Desconto de até 40% em medicamentos</span></h2>
-      
-        <div class="actions">
-        	<a href="#services" class="btn-services">Cadastre-se</a>
-          <a href="#about" class="btn-get-started">Login</a>
-          
-        </div>
-      </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+
+   <div class="bg-color">
+
+    <form method="post" >
+
+
+
+
+
+
+      <input type="hidden" name="_token" value="{{ csrf_token()}}">
+                                 
+
+         
+   
+   <div class="form-group row">
+  
+
+       
+                                 
+    <div class="col-sm-4 offset-md-4">
+      <input type="email" class="form-control " id="colFormLabelSm" placeholder="email">
     </div>
-  </section>
+    </div>
+
+                         <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+                           
+
+            <input type="text"  name="DataNasc" id="DataNasc" class="form-control"  autocomplete="off" value="" required/>
+                  </div>
+                  
+                    </div>
+
+              <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+                           
+
+            <input type="text"  name="DataNasc" id="DataNasc" class="form-control"  autocomplete="off" value="" required/>
+                  </div>
+                  
+                    </div>
 
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+                
 
-  <!-- Required JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/morphext/morphext.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/easing/easing.js"></script>
+          </form>
+    </div>
 
-  <!-- Template Specisifc Custom Javascript File -->
-  <script src="jotaS/custom.js"></script>
-
-
-
-</body>
-
-</html>
+                    </div>

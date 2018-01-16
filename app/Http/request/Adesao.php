@@ -24,11 +24,11 @@ public $DataNascConsumidor;
 public $Campanha;
 public $ControlePSW;
 protected $Cartao;
+
 public $EAN; 
 protected $CodigoProfissional;
 protected $UFProfissional;
 public $NomeProfissional;
-
 
 
   public function __construct($SeuSistema,$NrLocal,$HoraLocal,$Sessao,$NrCentral,$HoraCentral,$CtlAP,
@@ -51,7 +51,6 @@ public $NomeProfissional;
     $this->DataNascConsumidor = $DataNascConsumidor;
         $this->ControlePSW   = $ControlePSW;
     $this->Cartao= $Cartao;
-
     $this->EAN = $EAN;
     $this->Campanha = $Campanha;
         $this->CodigoProfissional=$CodigoProfissional;

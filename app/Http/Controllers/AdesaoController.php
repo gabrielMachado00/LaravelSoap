@@ -121,8 +121,8 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
  new Adesao('ADM03306921201R',(int)$Nrdata,$data,
 $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 (float)Request::input('CPF'),
-Request::input('datanasc'), Request::input('Senha'), 
- Request::input('Cartao'),7891721017261,'',Request::input('CodProf'),
+Request::input('DataNasc'), Request::input('senha'), 
+ Request::input('Cartao'),(float)Request::input('produto'),'',Request::input('CodProf'),
   Request::input('UFProf')
 ,Request::input('NomeProf'))
 
@@ -143,7 +143,7 @@ $cpff=(float)Request::input('CPF');
 
 $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
 (float)Request::input('CPF'),
-Request::input('datanasc'), Request::input('Senha'), 
+Request::input('DataNasc'), Request::input('senha'), 
  Request::input('Cartao'),7891721017261,'',Request::input('CodProf'),
   Request::input('UFProf'),
 Request::input('NomeProf')
@@ -175,13 +175,19 @@ $descricao=$produto->DESCRICAO;
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 
 
+
+
 var_dump($response);
+
 
 
 $cpf=$adesao->CPFConsumidor;
 $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 $ean=$adesao->EAN;
+
+
+var_dump($DataNasc);
 
 
 

@@ -6,8 +6,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Illuminate\Http\RedirectResponse ;
 use Request;
-
-
 class CadastroController
 {
   /**
@@ -29,14 +27,9 @@ class CadastroController
   public function AddConsumidor(){
 return View('InserirConsumidor');
   }
-private $SeuSistema="ADM03306921201R";
-
 
   public function InserirConsumidor() {
-
   $cuida=DB::table('mk_integrador')->limit(1)->get();
-
-
 foreach ($cuida as $cuidas) {
   
   $sessao= $cuidas->SESSAO;
@@ -48,14 +41,9 @@ if ($sessao == ''){
    $hr_central = '1901-01-01T00:00:00';
  }
 }
-
-
 $Nrdata=date('Ymd');
-
 $data=date("Y-m-d") . "T" . date("H:i:s");
-
 $cpf=Request::input('CPFCadastro');
-
   
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {
       $service
@@ -66,21 +54,16 @@ $cpf=Request::input('CPFCadastro');
         Cadastro::class,
         ]);
   });
-
-
  $response = $this->soapWrapper->call('PDVCadastroPFV1.CadastroPF',
   [
     new Cadastro('ADM03306921201R',(int)$Nrdata,$data,
 $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 42044830892,
-
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
-
  Request::input('Sexo') ,
  Request::input('CEP'),
   Request::input('UF'),
-
  Request::input('Cidade'),
  Request::input('Bairro'),
  Request::input('TLogradouro'),
@@ -95,17 +78,13 @@ Request::input('ComplementoEnd'),
  Request::input('MatInfo'),  
  Request::input('UsoDados'),
   Request::input('Correio'),
-
   Request::input('AceitaTele'),
  Request::input('AceitaSMS'),
  Request::input('AceitaEmail'),
  Request::input('SenhaCadastro')
-
-
  
  )
 ]);
-
     var_dump($response);
   }
 }

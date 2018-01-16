@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/cuide		.css">
+  <link rel="stylesheet" type="text/css" href="css/cuide.css">
   <!-- =======================================================
     Theme Name: Baker
     Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
@@ -98,7 +98,8 @@
         <div class="row no-gutters ">
 
 <div class="col-md-2  col-sm-2 col-xs-2  offset-md-4">
-            <a href="#"  class="btn btn-default btn-circle3">Saude da Mulher</a>
+            <a href="#"  class="btn btn-default btn-circle3"><p>Saude 
+            </p><p>da Mulher</p></a>
              </div>
 
 
@@ -109,28 +110,28 @@
 
 
 <div class="col-md-2  col-sm-2 col-xs-2  offset-md-4">
-            <a href="#"   class="btn btn-default btn-circle2">Diabetes</a>
+            <a href="#"   class="btn btn-default btn-circle2"><p>Diabetes</p></a>
              </div>
 
   <div class="col-md-1  col-sm-1 col-xs-1  offset-md-4">
-            <a href="#"  class="btn btn-default btn-circle">Hipertensão</a>
+            <a href="#"  class="btn btn-default btn-circle"><p>Hipertensão</p></a>
              </div>
      
                        <div class="col-md-1 col-sm-1 col-xs-1">
-            <a href="#"  class="btn btn-default btn-circle5"> Osteoartrite</a>
+            <a href="#"  class="btn btn-default btn-circle5"><p> Osteoartrite</p></a>
 
    </div>               
 
                         
                           <div class="col-md-1 col-sm-1 col-xs-1">
 
-            <a href="#"  class="btn btn-default btn-circle6"> Saúde do Homem </a>
+            <a href="#"  class="btn btn-default btn-circle6"><p> Saúde</p><p> do Homem </p></a>
 
    </div>   
 
                             <div class="col-md-1 col-sm-1 col-xs-1">
 
-            <a href="#"  class="btn btn-default btn-circle7">Doenças Cardiovasculares</a>
+            <a href="#"  class="btn btn-default btn-circle7"><p>Doenças</p><p> Cardiovasculares</p></a>
 
    </div>          
 
@@ -160,38 +161,69 @@
     <section id="service" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">What We Do?</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
+          <div class="col-md-12 text-left">
+            <h2 class="service-title pad-bt15">Posts</h2>
+            <h2 class="service-title1 pad-bt15"> Relacionados</h2>
+            
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><img src=" http://placehold.it/70x70" alt="..."></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"><img src=" http://placehold.it/70x70" alt="..."></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"><img src=" http://placehold.it/70x70" alt="..."></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src=" http://placehold.it/350x150" alt="...">
+          <div class="carousel-caption">
+          1
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>esign And Developement</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
+        </div>
+        <div class="item">
+          <img src=" http://placehold.it/350x150" alt="...">
+          <div class="carousel-caption">
+           2
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>W</span>ebsite Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
+        </div>
+        <div class="item">
+          <img src=" http://placehold.it/350x150" alt="...">
+          <div class="carousel-caption">
+           2
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>S</span>eo Optimization</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>igital Marketing</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">Learn more...</a>
-            </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+    $("a").click(function(e) {
+        e.preventDefault();
+        
+        $("#someFrame").attr("src", $(this).attr("href"));
+    })
+});
+</script>
           </div>
         </div>
       </div>
@@ -227,7 +259,6 @@
 	  <script src="js/wow.js"></script>
 	  <script src="js/jquery.bxslider.min.js"></script>
 	  <script src="js/custom.js"></script>
-	  <script src="contactform/contactform.js"></script>
 
 </body>
 </html>
