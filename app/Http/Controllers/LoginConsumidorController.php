@@ -102,6 +102,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 $cpf=$response->ConsultaAdesoesResult->CPFConsumidor;
 $DataNascimento=$response->ConsultaAdesoesResult->Lista->Produtos->DataNascimento;
+
 $cartao=$response->ConsultaAdesoesResult->Lista->Produtos->Cartao;
  
 
