@@ -27,7 +27,6 @@ class CadastroController
   public function AddConsumidor(){
 return View('InserirConsumidor');
   }
-
   public function InserirConsumidor() {
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 foreach ($cuida as $cuidas) {
@@ -58,7 +57,7 @@ $cpf=Request::input('CPFCadastro');
   [
     new Cadastro('ADM03306921201R',(int)$Nrdata,$data,
 $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
-42044830892,
+(float)Request::input('CPFCadastro'),
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),
  Request::input('Sexo') ,

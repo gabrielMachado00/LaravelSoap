@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\request\ConsultaAdesao;
 use App\Http\request\ConsultaCadastro;
-
+use App\Http\Controllers\View;
 
 use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
@@ -101,17 +101,21 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
 $cpf=$response->ConsultaAdesoesResult->CPFConsumidor;
-$DataNascimento=$response->ConsultaAdesoesResult->Lista->Produtos->DataNascimento;
-
+$DataNasc=$response->ConsultaAdesoesResult->Lista->Produtos->DataNascimento;
 $cartao=$response->ConsultaAdesoesResult->Lista->Produtos->Cartao;
+ $ean=$response->ConsultaAdesoesResult->Lista->Produtos->EAN;
  
+
+
+
+
 
  $response1 = $this->soapWrapper->call('Cadastro.ConsultaCadastroPF',
   [
 
 
     new ConsultaCadastro('ADM03306921201R',$Nrdata,$data,$sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
- (float)Request::input('CPF'),$DataNascimento,Request::input('Senha'), $cartao)
+ (float)Request::input('CPF'),$DataNasc,Request::input('Senha'), $cartao)
 
 
 
@@ -119,15 +123,38 @@ $cartao=$response->ConsultaAdesoesResult->Lista->Produtos->Cartao;
 
 ]);
 
+$senha=Request::input('Senha');
+$nome=$response1->ConsultaCadastroPFResult->NomeConsumidor;
+$sexo=$response1->ConsultaCadastroPFResult->Sexo;
+$cep=$response1->ConsultaCadastroPFResult->CEPConsumidor;
+$uf=$response1->ConsultaCadastroPFResult->UFConsumidor;
+$CidadeConsumidor=$response1->ConsultaCadastroPFResult->CidadeConsumidor;
+$BairroConsumidor=$response1->ConsultaCadastroPFResult->BairroConsumidor;
+$TipoLogradouroConsumidor=$response1->ConsultaCadastroPFResult->TipoLogradouroConsumidor;
+$LogradouroConsumidor=$response1->ConsultaCadastroPFResult->LogradouroConsumidor;
+$NrEnderConsumidor=$response1->ConsultaCadastroPFResult->NrEnderConsumidor;
+$ComplEnderConsumidor=$response1->ConsultaCadastroPFResult->ComplEnderConsumidor;
+$DDDCelular=$response1->ConsultaCadastroPFResult->DDDCelular;
+$FoneCelular=$response1->ConsultaCadastroPFResult->FoneCelular;
+$DDDFixo=$response1->ConsultaCadastroPFResult->DDDFixo;
+$FoneFixo=$response1->ConsultaCadastroPFResult->FoneFixo;
+$EmailConsumidor=$response1->ConsultaCadastroPFResult->EmailConsumidor;
+$AceitaMaterialInformativo=$response1->ConsultaCadastroPFResult->AceitaMaterialInformativo;
+$AceitaUsodosDados=$response1->ConsultaCadastroPFResult->AceitaUsodosDados;
+$AceitaCorreio=$response1->ConsultaCadastroPFResult->AceitaCorreio;
+$AceitaFone=$response1->ConsultaCadastroPFResult->AceitaFone;
+$AceitaSMS=$response1->ConsultaCadastroPFResult->AceitaSMS;
+$AceitaEmail=$response1->ConsultaCadastroPFResult->AceitaEmail;
 
-
-
-
-var_dump($response1);
 var_dump($response);
+var_dump($response1);
 
 
-return view('AtualizaAdesao');
+
+
+View::share('MeusDados',compact('nome','Cartao','sexo','cpf','senha','cartao','DataNasc','cep','uf','CidadeConsumidor','BairroConsumidor','TipoLogradouroConsumidor','LogradouroConsumidor','NrEnderConsumidor','ComplEnderConsumidor','DDDCelular','FoneCelular','DDDFixo','FoneFixo','EmailConsumidor','AceitaMaterialInformativo','AceitaUsodosDados','AceitaCorreio','AceitaFone','AceitaSMS','AceitaEmail','ean'));
+
+
 }
 
 

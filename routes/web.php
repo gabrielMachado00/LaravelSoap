@@ -16,7 +16,7 @@
       Route::post('/Cadastro/Consumidor', 'CadastroController@InserirConsumidor');
 
 
-    Route::get('/Cadastro/Adesao', 'AdesaoController@AddAdesao');
+   
       
       Route::post('/Cadastro/Adesao', 'AdesaoController@InserirAdesao');
             
@@ -44,6 +44,8 @@
   Route::post('/VerLoja', 'MapsController@Import');
   
   Route::get('/ProcureLoja', 'MapsController@getMapa');
+
+  Route::get('/adesoes', 'AdesoesController@Adesoes');
 
 
 Route::get('/home', 'HomeController@Home')->name('home');
