@@ -100,10 +100,9 @@
         <div class="row no-gutters ">
 
 <div class="col-md-2  col-sm-2 col-xs-2  offset-md-4">
-            <a href="#"  class="btn btn-default btn-circle3"><p>Saude 
+<p>Saude 
             </p><p>da Mulher</p></a>
              </div>
-
 
              <div class="col-md-2 col-sm-2 col-xs-2 ">
             <a href="#"  class="btn btn-default btn-circle4"></a>
@@ -159,6 +158,14 @@
       </div>
     </section>
     <!---->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
+
+$('.btn-circle4').click(function(){
+    $('#imageCarousel').slideToggle('slow');
+});
+
+    </script>
     <!---->
     <section id="service" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
@@ -250,14 +257,14 @@
                                         <h3>Stripes</h3>
                                         <p>Stripes Image Description</p>
                                     </div>
+</div> 
 
 
-            
             </div>
             </div>
 
              
-            </div>
+ 
 
 
 

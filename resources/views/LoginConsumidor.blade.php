@@ -37,7 +37,7 @@
    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-      <input type="password" class="form-control " id="Senha" name="Senha" placeholder="Senha">
+      <input type="password" class="form-control" name="Senha"  id="Senha" placeholder="Senha">
     </div>
     </div>
 

@@ -45,24 +45,17 @@
                     </div>
 
 
-
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
+                            
                  
             <div class="form-group row">
                      <div class="col-sm-4 offset-md-4">
                            
 
             <input type="text"  name="ean" id="ean" class="form-control"  autocomplete="off"  placeholder="Produto" required/>
-                  </div>
                   
-                    </div>
-
-
 
 		                </div>
-</div>
+          </div>
 
 
 

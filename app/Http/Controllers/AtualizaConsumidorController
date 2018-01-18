@@ -29,7 +29,8 @@ class AtualizaConsumidorController
   public function AddConsumidor(){
 return View('InserirConsumidor');
   }
-private $SeuSistema="ADM03306921201R";
+  
+    
 
 
   public function InserirConsumidor() {

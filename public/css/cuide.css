@@ -19,6 +19,11 @@ p.veja{
 
 color:#5a2994;  
 }
+
+.hidden {
+     display:none;
+}
+
 .carousel{
 
     height: 100px;

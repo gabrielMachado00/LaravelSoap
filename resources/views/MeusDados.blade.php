@@ -282,6 +282,10 @@
 			</div>
 
 
+
+
+
+
                  	<input type="hidden" name="CPFCadastro" value="{{$cartao}}"  required/>
 				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
 				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>

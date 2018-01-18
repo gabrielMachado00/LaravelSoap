@@ -5,7 +5,7 @@ use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Illuminate\Http\RedirectResponse ;
-use Request;
+
 class CadastroController
 {
   /**

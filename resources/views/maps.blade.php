@@ -8,11 +8,9 @@
 
 
     <div class="header">
-
-      <div class="bg-color">
-
-  
-         <div class="row no-gutters">
+   <div class="bg-color">
+        <div class="row no-gutters">
+   
 
    <div class="col-xs-12">
 <div id="Busca">
