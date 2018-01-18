@@ -8,7 +8,9 @@ use App\Http\response\GetAdesaoResponse;
 use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
-use Request;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request as HttpRequest;
+
 
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
@@ -67,7 +69,7 @@ return view('InserirAdesao');
 
 
 
-  public function InserirAdesao(Request $request) {
+  public function InserirAdesao(HttpRequest $request) {
 
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 
@@ -135,7 +137,6 @@ Request::input('DataNasc'), Request::input('senha'),
 $produtos=DB::table('mk_produtos')->limit(1)->get();
 
 
-$cpff=(float)Request::input('CPF');
     // Without classmap
    $adesao=   
  new Adesao('ADM03306921201R',$Nrdata,$data,
@@ -186,6 +187,7 @@ $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 $ean=$adesao->EAN;
 
+$cpfSession= $request->session()->put('cpfSession',$cpf);
 
 var_dump($DataNasc);
 

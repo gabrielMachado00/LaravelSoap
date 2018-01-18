@@ -19,7 +19,11 @@ p.veja{
 
 color:#5a2994;  
 }
+.carousel{
 
+    height: 100px;
+    margin-top: 500px;
+}
 .btn-circle {
     background-color: #5b2a95;
 margin-left: -100px !important;

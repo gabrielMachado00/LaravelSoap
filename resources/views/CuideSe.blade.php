@@ -14,12 +14,14 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/cuide.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- =======================================================
     Theme Name: Baker
     Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+
 </head>
 
 <body>
@@ -165,49 +167,97 @@
             <h2 class="service-title pad-bt15">Posts</h2>
             <h2 class="service-title1 pad-bt15"> Relacionados</h2>
             
- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><img src=" http://placehold.it/70x70" alt="..."></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"><img src=" http://placehold.it/70x70" alt="..."></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"><img src=" http://placehold.it/70x70" alt="..."></li>
-      </ol>
+ <div id="imageCarousel" class="carousel slide" data-interval="2000"
+                     data-ride="carousel" data-pause="hover" data-wrap="true">
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src=" http://placehold.it/350x150" alt="...">
-          <div class="carousel-caption">
-          1
-          </div>
-        </div>
-        <div class="item">
-          <img src=" http://placehold.it/350x150" alt="...">
-          <div class="carousel-caption">
-           2
-          </div>
-        </div>
-        <div class="item">
-          <img src=" http://placehold.it/350x150" alt="...">
-          <div class="carousel-caption">
-           2
-          </div>
-        </div>
-      </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    </ol>
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/Desert.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Desert</h3>
+                                        <p>Desert Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Jellyfish.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Jellyfish</h3>
+                                        <p>Jellyfish Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Penguins.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Penguins</h3>
+                                        <p>Penguins Image Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/Lighthouse.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Lighthouse</h3>
+                                        <p>Lighthouse Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Hydrangeas.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Hydrangeas</h3>
+                                        <p>Hydrangeas Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Koala.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Koala</h3>
+                                        <p>Koala Image Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/tulips.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Tulips</h3>
+                                        <p>Tulips Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Chrysanthemum.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Chrysanthemum</h3>
+                                        <p>Chrysanthemum Image Description</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/stripes.jpg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>Stripes</h3>
+                                        <p>Stripes Image Description</p>
+                                    </div>
 
 
+            
+            </div>
+            </div>
 
+             
+            </div>
 
 
 
@@ -259,6 +309,6 @@
 	  <script src="js/wow.js"></script>
 	  <script src="js/jquery.bxslider.min.js"></script>
 	  <script src="js/custom.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

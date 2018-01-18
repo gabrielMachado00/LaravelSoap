@@ -93,7 +93,7 @@ alert("Cadastrado com sucesso!");
 
 @endif
 
-
+  <p>{{ session()->get('cpfSession') }}</p>
 
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">

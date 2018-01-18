@@ -21,8 +21,12 @@ class AdesoesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function Adesoes()
+    public function Adesoes(Request $request)
     {
+$cpf=$request->session()->get('cpfSession');
+
+var_dump($cpf);
+
 
         return view('adesoes');
     }
