@@ -9,6 +9,7 @@
 
     <div class="header">
    <div class="bg-color">
+@Include('layouts.menuBot')
         <div class="row no-gutters">
    
 
@@ -16,7 +17,7 @@
 <div id="Busca">
 <p>Busca </p>
 </div>
-g
+
 <div id="Busca2">
 <p>de redes Credenciadas</p>
 </div>
@@ -218,7 +219,6 @@ g
 AIzaSyDyNHjMcC4PsU3IEkziUc-a3qDMgLxkRnw&callback=initMap">
     </script>
 
-   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.js"></script>
@@ -229,5 +229,16 @@ AIzaSyDyNHjMcC4PsU3IEkziUc-a3qDMgLxkRnw&callback=initMap">
 
 
  
- </script>
+<script  src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ asset('js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/agency.min.js')}}"></script>
  @stop

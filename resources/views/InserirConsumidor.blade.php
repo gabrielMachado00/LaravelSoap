@@ -1,12 +1,27 @@
-<head>
-    <title>ViaCEP Webservice</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+ @Include('layouts.consumidor')
 
     <!-- Adicionando JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
+    <!-- Adicionando JQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <link href="{{ asset('css/consumidor.css')}}" rel="stylesheet">
+        
+<script>
+	$(document).ready(function () { 
+$('#Telefixo').mask('9999-9999');
+$('#Celular').mask('99999-9999');
+
+});
+
+
+
+</script>
     <!-- Adicionando Javascript -->
     <script type="text/javascript" >
         $(document).ready(function() {
@@ -73,80 +88,309 @@
             });
         });
     </script>
-    </head>
 
-    
+
+
+
+
+
+<body>	
+
+
+
+
+     <div class="bg-color">
+
+@Include('layouts.menuBot')
 
    <form action="/Cadastro/Consumidor" method="post">
 
 
-@if($response)
-	
-
-<script>
-	
-alert("Cadastrado com sucesso!");
-</script>
-
-
-
-
-@endif
 
   <p>{{ session()->get('cpfSession') }}</p>
 
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+               <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+                           
                  <label for="Consumidor">Nome consumidor:</label>
-				<input type="text" name="Consumidor" 	required/>
+
+             </div>
+         </div>
+                <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+                           
+				<input type="text" name="Consumidor" class="form-control" required/>
 				<label for="Sexo">Sexo:</label>
-				<label><input type="radio" name="Sexo" value="77" required/>Masculino</label>
-				<label><input type="radio" name="Sexo" value="70" required/>Feminino</label>
+				       </div>
+         </div>
+
+
+          <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+				<label><input type="radio" name="Sexo" value="77" class="form-control" required/>Masculino</label>
+				<label><input type="radio" name="Sexo" value="70" class="form-control" required/>Feminino</label>
+
+							       </div>
+         </div>
+
+    <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="CEP">CEP:</label>
-				<input type="text" name="CEP" id="cep" required/>
+				<input type="text" name="CEP" id="cep" class="form-control" required/>
+
+										       </div>
+         </div>
+
+ <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 			    <label for="UF">UF:</label>
-				<input type="text" name="UF" id="uf" required/>
+				<input type="text" name="UF" id="uf" class="form-control" required/>
+													       </div>
+         </div>
+
+ <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="Cidade">Cidade:</label>
-				<input type="text" name="Cidade" id="cidade" required/>
+				<input type="text" name="Cidade"  class="form-control" id="cidade" required/>
+
+
+             </div>
+         </div>
+
+          <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="Bairro">Bairro:</label>
-				<input type="text" name="Bairro" id="bairro" required/>
+				<input type="text" name="Bairro" class="form-control" id="bairro" required/>
+				 </div>
+         </div>
+
+          <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="TLogradouro">Tipo Logradouro:</label>
-				<input type="text" name="TLogradouro" id="tipologradouro" required/>
+				<input type="text" name="TLogradouro" class="form-control" id="tipologradouro" required/>
+						 </div>
+         </div>
+
+
+
+          <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="Logradouro">Logradouro:</label>
-				<input type="text" name="Logradouro" id="rua" required/>
+				<input type="text" name="Logradouro" id="rua" class="form-control" required/>
+	     </div>
+           </div>
+
+
+ <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
 				<label for="Numero">Numero:</label>
-				<input type="text" name="Numero" required/>
+				<input type="text" name="Numero" class="form-control" required/>
+
+				 </div>
+           </div>
+
+            <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+
 				<label for="CompletmentoEnd">Complemento:</label>
-				<input type="text" name="ComplementoEnd"/>
-				<label for="TeleFixo">Telefone Fixo:</label>
+				<input type="text" class="form-control" name="ComplementoEnd"/>
 
-				<input type="text" name="TeleFixo_DD" required/>
-				<input type="text" id="Telefixo" name="Telefixo"  required/>
+						 </div>
+           </div>
 
-			
-				<label for="Celular">Celular</label>
-				<input type="text" id="Celular_DD" name="Celular_DD" required/>
-				<input type="text" id="Celular" name="Celular" required/>
+
+           <div class="form-group row">
+                     <div class="col-sm-1 offset-md-4">
+				
+					<label for="Email">DDD Fixo</label>
+				<input type="text" name="TeleFixo_DD" class="form-control" maxlength="2" required/>
+
+				    </div>
+
+				      <div class="col-sm-3 ">
+				      				<label for="Email">Telefone fixo</label>
+				<input type="text" id="Telefixo" name="Telefixo"  class="form-control" required/>
+				 </div>
+           </div>
+
+			           <div class="form-group row">
+                     <div class="col-sm-1 offset-md-4">
+		<label for="Email">DDD</label>
+				<input type="text" id="Celular_DD" maxlength="2" name="Celular_DD" class="form-control" required/>
+      </div>
+				<div class=" col-sm-3 ">
+			<label for="Email">Número Celular</label>
+				<input type="text" id="Celular" class="form-control" name="Celular" required/>
+					 </div>
+           </div>
+
+
+			           <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+
 				<label for="Email">Email:</label>
-				<input type="email" name="Email" required/>
-				<label for="MatInfo">Material Informativo:
-				<input type="checkbox" name="MatInfo" value="83"/></label>
-				<label for="UsoDados">Uso de Dados:
-				<input type="checkbox" name="UsoDados" value="83"/></label>
-				<label for="Correio">Correio:
-				<input type="checkbox" name="Correio" value="83"/></label>
-				<label for="AceitaTele">Aceita telefone:
-				<input type="checkbox" name="AceitaTele" value="83"/></label>
-				<label for="AceitaSMS">Aceita SMS:
-				<input type="checkbox" name="AceitaSMS" value="83"/></label>
-				<label for="AceitaEmail">Aceita email:
-				<input type="checkbox" name="AceitaEmail" value="83"/></label>
-				<input type="hidden" name="CPFCadastro" value="{{$cpf}}"  required/>
+				<input type="email" name="Email" class="form-control" required/>
+						 </div>
+           </div>
+
+
+
+	           <div class="form-group row">
+         
+				
+
+			         <div class="col-sm-4 offset-md-4">
+                             
+                       <div class="form-check form-check-inline">
+		         	<label class="form-check-label" for="MatInfo" >
+                          
+                       
+				<input type="checkbox" name="MatInfo" class="form-check-input" value="83"/>Material Informativo</label>
+           </div>
+
+                      <div class="form-check form-check-inline">
+				<label class="form-check-label" for="UsoDados">
+
+				<input type="checkbox" class="form-check-input" name="UsoDados" value="83"/>Uso de Dados:</label>
+	                       </div>
+								 </div>
+								 	 </div>
+
+								 	
+
+    <div class="form-group row">
+                     <div class="col-sm-4 offset-md-4">
+                     	      <div class="form-check form-check-inline">
+								<label class="form-check-label" for="Correio">
+				<input type="checkbox" class="form-check-input" name="Correio" value="83"/>Correio:</label>
+									 </div>
+
+				 <div class="form-check form-check-inline">
+				<label for="AceitaTele" class="form-check-label" >
+				<input type="checkbox" name="AceitaTele" class="form-check-input" value="83"/>Aceita telefone:</label>
+								 </div>
+                          </div>
+
+                   </div>
+
+
+               <div class="form-group row">
+
+                     <div class="col-sm-4 offset-md-4">
+                     	   	      <div class="form-check form-check-inline">
+
+				<label for="AceitaSMS" class="form-check-label">
+				<input type="checkbox" class="form-check-input" name="AceitaSMS" v value="83"/>Aceita SMS:</label>
+				 </div>
+                 <div class="form-check form-check-inline">
+				<label for="AceitaEmail" class="form-check-label">
+				<input type="checkbox" name="AceitaEmail" class="form-check-input" value="83"/>Aceita email:</label>
+								 </div>
+                          </div>
+                       </div>
+
+				<input type="hidden" name="CPFCadastro"  value="{{$cpf}}"  required/>
 				<input type="hidden" name="DataNascCadastro" value="{{$DataNasc}}" required/>
 				<input type="hidden" name="SenhaCadastro"  value="{{$senha}}" required/>
 				<input type="hidden" name="Descricao"  value="{{$descricao}}" required/>
 				<input type="hidden" name="Ean"  value="{{$ean}}" required/>
 				<input type="hidden" name="NrCentral"  required/>
-				<input type="submit" name="submit2" value="Enviar"/>
+		    <input type="hidden" name="nrCentral"  value="{{$nrCentral}}" required/>
+
+		             <div class="form-group row">
+
+                     <div class="col-sm-4 offset-md-4">
+				<input type="submit" name="submit2" class="btn btn-primary btnEnviar"  value="Enviar"/>
+				   </div>
+                       </div>
 			</form>
+
+		
+     <!---->
+    <section id="PassoApasso">
+      <div class="container">
+         <div class="row">
+
+                     <div class="col-md-2 offset-md-4 ">
+        <h1>1</h1>
+           </div>
+             <div class="col-sm-2 filho">
+        <h1>2</h1>
+           </div>
+
+             <div class="col-sm-4 ">
+        <h1>3</h1>
+           </div>
+                       </div>
+
+
+
+                    </div>
+</section>
+
+
+
+    <section id="Autorizo">
+      <div class="container">
+         <div class="row">
+
+  <div class="col-sm-6  offset-md-3">
+     <div class="Autorizo">
+    <p>Autorizo <span class="last-letter">*</span></p>
+</div>
+  </div>
+                       </div>
+
+
+      <div class="row">
+
+   <div class="col-sm-6  offset-md-3">
+   <div class="aceita">
+
+      </div>
+         <div class="aceita1">
+
+       </div>
+       <div class="aceita2">
+ 
+         </div>
+  </div>
+
+ </div>
+
+
+  <div class="row">
+ <div class="col-sm-6  offset-md-5">
   
+
+
+                         </div>
+
+
+
+
+                       </div>
+
+                       </div>
+
+
+                    </div>
+</section>    
+          </div>
+ <!-- Bootstrap core JavaScript -->
+    <script  src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ asset('js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/agency.min.js')}}"></script>
+          <body>	

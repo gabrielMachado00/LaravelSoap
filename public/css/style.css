@@ -182,11 +182,7 @@ font-family: "Merck";
     color:white;
 
   }
-  .nav{
-
-margin-left: 200px;
-
-  }
+ 
   #TextoMerck2{
     
        margin-top:-25px;
@@ -232,63 +228,15 @@ letter-spacing:3px;
 #main-header
 {
 }
-.navbar-default {
-    background-color: transparent;
-    border:0px;
-    padding: 20px 0; 
-    transition: all 0.3s;
-}
-
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
-{
-   
-}
-
-.top-nav-collapse {
-    padding: 0; 
-   
-}
 
 .logo-dec
 {
     color: #be9e21;
 }
-.navbar-default .navbar-brand {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
-{
-    color: #fff;
-}
-.navbar-brand {
-    padding: 0px;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 15px 0px;
-    margin-top: 6px;
-}
-.navbar-default .navbar-nav > li > a
-{
-    padding: 5px 10px;
-    font-size: 14px;
-    line-height: 54px;
-    font-weight: 400;
-    text-transform: uppercase;
-    background: transparent;
-    color: #fff;
-    -webkit-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #be9e21;
-    background-color: transparent;
-}
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    background-color: transparent;
-    color: #be9e21;
-}
+
+
+
+
 .banner-info
 {
     padding-top: 140px;
@@ -846,11 +794,7 @@ Responsive media queries
     margin-bottom: 15px;
 }
 }
-@media (min-width: 20px) and (max-width: 450px) {
-.navbar-default .navbar-brand {
-    padding-left: 16px;
-    margin-top: 0px;
-}
+
 .banner-info {
     padding-top: 40px;
 }
@@ -900,8 +844,82 @@ body{
     margin: 10px 0;
     padding: 0 40px;
 }
-.navbar-default .navbar-nav > li > a{
-    line-height: 22px;
-    text-align: center;
+
 }
+
+
+
+
+#mainNav {
+  background-color: #212529;
+  font-size: 20px;
 }
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #fed136;
+  font-family: 'Arial';
+}
+
+#mainNav .navbar-brand {
+  color: #5b2a95;
+  font-family: 'merck';
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #5b2a95;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Arial';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #5b2a95;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+
+  .myNavbar{
+
+    margin-left: -150px;
+  }
+}
+

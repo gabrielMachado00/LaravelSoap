@@ -6,6 +6,7 @@
 </head>
 
 <body>
+@Include('layouts.menuBot')
   <div id="preloader"></div>
 
   <!--==========================
@@ -20,7 +21,7 @@
         <h2>Desconto de até 40% em medicamentos</span></h2>
       
         <div class="actions">
-        	<a href="#services" class="btn-services">Cadastre-se</a>
+          <a href="#services" class="btn-services">Cadastre-se</a>
           <a href="#about" class="btn-get-started">Login</a>
           
         </div>
@@ -44,6 +45,18 @@
   <!-- Template Specisifc Custom Javascript File -->
   <script src="jotaS/custom.js"></script>
 
+<script  src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ asset('js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/agency.min.js')}}"></script>
 
 
 </body>

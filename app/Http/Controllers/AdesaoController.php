@@ -99,11 +99,9 @@ if ($sessao == ''){
     ->classmap([
         Adesao::class,
       GetAdesaoResponse::class,
-        ])
-
-    ->options([
-           'features'=>SOAP_SINGLE_ELEMENT_ARRAYS
         ]);
+
+  
 
   });
 
@@ -176,6 +174,7 @@ $descricao=$produto->DESCRICAO;
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 
 
+$nrCentral=$response->AdesaoPrdResult->NrCentral;
 
 
 var_dump($response);
@@ -189,11 +188,14 @@ $ean=$adesao->EAN;
 
 $cpfSession= $request->session()->put('cpfSession',$cpf);
 
+
+
+
 var_dump($DataNasc);
 
 
 
-return view('InserirConsumidor',compact('response','cpf','ean','DataNasc','senha','produtos','descricao'));
+return view('InserirConsumidor',compact('response','cpf','ean','DataNasc','senha','produtos','descricao','nrCentral'));
 
 
 

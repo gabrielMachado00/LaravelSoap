@@ -5,7 +5,7 @@
  
 
 
-  <link href="csss/adesao.css" rel="stylesheet">
+<meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=" crossorigin="anonymous" />
    
@@ -20,11 +20,15 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.bxslider.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css')}}">
+
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css')}}">
 
         <!-- Google Analytics Tag -->
         <script>
@@ -36,3 +40,8 @@
             ga('send', 'pageview');
         </script>
     </head>
+  <body>
+        
+
+          @yield('content')
+    </body>

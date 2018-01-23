@@ -5,6 +5,8 @@ use Artisaninweb\SoapWrapper\SoapWrapper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use Illuminate\Http\RedirectResponse ;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request as HttpRequest;
 
 class CadastroController
 {
@@ -56,7 +58,7 @@ $cpf=Request::input('CPFCadastro');
  $response = $this->soapWrapper->call('PDVCadastroPFV1.CadastroPF',
   [
     new Cadastro('ADM03306921201R',(int)$Nrdata,$data,
-$sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
+$sessao,(float)Request::input('nrCentral'),$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 (float)Request::input('CPFCadastro'),
  Request::input('DataNascCadastro'),
  Request::input('Consumidor'),

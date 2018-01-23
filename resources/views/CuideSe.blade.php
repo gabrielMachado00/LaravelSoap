@@ -11,16 +11,12 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
   <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/cuide.css">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- =======================================================
-    Theme Name: Baker
-    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+ 
+
+
 
 </head>
 
@@ -166,7 +162,17 @@ $('.btn-circle4').click(function(){
 });
 
     </script>
-    <!---->
+
+    <script>
+$(document).ready(function(){
+    $('#imagem').click(function (e) { 
+      e.preventDefault();
+      $('#frame').attr("src", $(this).attr("href"));
+})
+   });
+     
+        </script>
+
     <section id="service" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
         <div class="row">
@@ -174,103 +180,89 @@ $('.btn-circle4').click(function(){
             <h2 class="service-title pad-bt15">Posts</h2>
             <h2 class="service-title1 pad-bt15"> Relacionados</h2>
             
- <div id="imageCarousel" class="carousel slide" data-interval="2000"
-                     data-ride="carousel" data-pause="hover" data-wrap="true">
+</div>
+</div>
 
-                    <ol class="carousel-indicators">
-                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#imageCarousel" data-slide-to="1"></li>
-                        <li data-target="#imageCarousel" data-slide-to="2"></li>
-                    </ol>
+<div class="row">
+          <div class="col-md-12 text-left">
+<iframe style="width: 90%; height: 200px;" id="frame" name="internal"></iframe>
+</div>
+</div>
 
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <img src="Images/Desert.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Desert</h3>
-                                        <p>Desert Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/Jellyfish.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Jellyfish</h3>
-                                        <p>Jellyfish Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/Penguins.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Penguins</h3>
-                                        <p>Penguins Image Description</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <img src="Images/Lighthouse.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Lighthouse</h3>
-                                        <p>Lighthouse Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/Hydrangeas.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Hydrangeas</h3>
-                                        <p>Hydrangeas Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/Koala.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Koala</h3>
-                                        <p>Koala Image Description</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <img src="Images/tulips.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Tulips</h3>
-                                        <p>Tulips Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/Chrysanthemum.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Chrysanthemum</h3>
-                                        <p>Chrysanthemum Image Description</p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <img src="Images/stripes.jpg" class="img-responsive">
-                                    <div class="carousel-caption">
-                                        <h3>Stripes</h3>
-                                        <p>Stripes Image Description</p>
-                                    </div>
-</div> 
-
-
-            </div>
-            </div>
-
-             
+<div class="row">
+          <div class="col-md-12">
  
+ <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+          </div>
+          <!-- add  more items here -->
+          <!-- Example item start:  -->
+           
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+          </div>
+           
+          <!--  Example item end -->
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
 
 
 
 
 
-    <script src="js/jquery.min.js"></script>
+
+               </div>
+  </div>
+
+</div>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery.min.js">
+      
+/* Downloaded from https://www.codeseek.co/ */
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+ 
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+   
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+
+      
+    </script>
 <script type="text/javascript">
   
   $(document).ready(function(){
@@ -316,6 +308,6 @@ $('.btn-circle4').click(function(){
 	  <script src="js/wow.js"></script>
 	  <script src="js/jquery.bxslider.min.js"></script>
 	  <script src="js/custom.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
