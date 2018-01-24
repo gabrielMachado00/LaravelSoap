@@ -199,12 +199,12 @@
       <div class="row">
 
    <div class="col-sm-6  offset-md-3">
-   <div class="aceita">
-    <p>O Usuário aceita e autoriza que os seus Dados Pessoais sejam objeto de </p>
-      </div>
-         <div class="aceita1">
- <p>tratamento por parte da MERCK,a qual o Usuário declara ter plena ciência </p>
-       </div>
+
+    <p class="aceita">O Usuário aceita e autoriza que os seus Dados Pessoais sejam objeto de </p>
+
+ 
+ <p class="aceita1">tratamento por parte da MERCK,a qual o Usuário declara ter plena ciência </p>
+  
        <div class="aceita2">
   <p>e compreensão de suas disposições
   </p>
@@ -237,17 +237,16 @@
       <div class="container">
         <form class="form form-inline" role="form">
         <div class="row no-gutters">
-          <div class="col-xs-3">
+          <div class="col-xs-2">
 
 
 
-           <div class="sac">
+     
 
-                     <p> 0800 772-3322 </p>
-                 </div>
-
-                             <div class="sac2">
-             <p> Sac Merck cuida</p>
+                     <p class="sac"> 0800 772-3322 </p>
+                
+                         
+             <p class="sac2"> Sac Merck cuida</p>
                 </div>
 
 
@@ -262,14 +261,14 @@
 
       <div class="col-xs-2">
         <div class="form-inline">
-        <div class="cadastro">
+        <div class="cadastro" id="cadastrar">
       <a href="#services" class="btn-Cadastro">Cadastre-se</a>
    </div>
       </div>
        </div>
 
 
-         <div class="col-xs-2">
+         <div class="col-sm-2 col-xs-2">
                  <div class="form-inline">
    <div class="Login">
             <a  href="#services" class="btn-Login">Login</a>
@@ -282,7 +281,7 @@
 
 
 
-      <div class="col-xs-1">
+      <div class="col-sm-1 col-xs-1">
 
          <div class="bulario">
       <a href="#services" class="btn-Bulario">Bulário</a>
@@ -294,15 +293,15 @@
       
 
     
-           <div class="col-xs-3">
- <div class="TextoMerck1">
+           <div class="col-sm-3 col-xs-3">
+
    
-    <p>M</p>
+    <p class="TextoMerck1">M</p>
     <div>
 
 
 
-    <div class="TextoMerck2">
+    <div class="col-sm-3 TextoMerck2">
      <p>Merck Atende</p>
 </div>
 

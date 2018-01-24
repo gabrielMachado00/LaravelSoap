@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                           <a class="nav-link" href="{{ url('Login') }}">Home</a>
+                           <a class="nav-link" href="{{ url('Home') }}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('Sobre') }}">Sobre</a>

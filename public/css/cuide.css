@@ -1,9 +1,4 @@
-/*
-    Theme Name: Baker
-    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
+
 @font-face {
     font-family: 'merck';
     src: url('/fonts/Merck.otf');
@@ -309,19 +304,19 @@ margin-bottom: 200px;
 
 }
  ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
@@ -748,7 +743,7 @@ features
 }
 #service
 {
-    background-color: #F3F4F8;
+    background-color: white;
 }
 ul.service-list li i
 {

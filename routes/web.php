@@ -22,7 +22,7 @@
             
              Route::get('/Cadastro/Adesao', 'AdesaoController@Index');
 
-             Route::get('/Login', 'LoginController@LoginAdd');
+             Route::get('/Home', 'LoginController@LoginAdd');
 
 
   Route::get('/CuideSe', 'CuideController@Cuide');
@@ -48,11 +48,6 @@
   Route::get('/adesoes', 'AdesoesController@Adesoes');
 
 
-Route::get('/home', 'HomeController@Home')->name('home');
-
-
-
-Route::get('/home', 'HomeController@Home')->name('home');
 
 
 	Route::get('export','MapsController@exportData');
