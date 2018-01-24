@@ -36,17 +36,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="#">Ba<span class="logo-dec">ker</span></a>
+                <a class="navbar-brand" href="#"><span class="logo-dec">M</span></a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#main-header">Home</a></li>
-                  <li class=""><a href="#feature">About</a></li>
-                  <li class=""><a href="#service">Services</a></li>
-                  <li class=""><a href="#portfolio">Portfolio</a></li>
-                  <li class=""><a href="#testimonial">Testimonial</a></li>
-                  <li class=""><a href="#blog">Blog</a></li>
-                  <li class=""><a href="#contact">Contact Us</a></li>
+                <ul class="nav navbar-nav navbar-center">
+                  <li class=""><a href="{{ url('Login') }}">Home</a></li>
+                  <li class=""><a href="{{ url('Sobre') }}">Sobre</a></li>
+                  <li class=""><a href="{{ url('ProcureLoja') }}">Redes Credenciadas</a></li>
+                   <li class=""><a href="{{ url('/CuideSe') }}">Blog-Cuide-se</a>
+            </li>
+
+              <li class="" ><a href="{{ url('/Cadastro/Adesao') }}">Cadastro</a></li>
+   
+                 
                 </ul>
               </div>
             </div>
@@ -284,22 +286,9 @@ $('.multi-item-carousel .item').each(function(){
     <!--
     <!---->
     <!---->
-    <footer id="footer">
-      <div class="container">
-        <div class="row text-center">
-          <p>&copy; Baker Theme. All Rights Reserved.</p>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
-            -->
-            Designed by <a href="https://bootstrapmade.com/">Bootstrap Templates</a>
-          </div>
-        </div>
+  
+
       </div>
-    </footer>
     <!---->
   </div>
 	  <script src="js/jquery.min.js"></script>

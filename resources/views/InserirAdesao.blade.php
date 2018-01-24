@@ -210,16 +210,13 @@
   </p>
          </div>
   </div>
-
- </div>
-
-
+</div>
   <div class="row">
  <div class="col-sm-6  offset-md-5">
   
 
 
-<button type="button" class="btn btn-primary cadastro">Cadastrar</button>
+<button type="button" id="botao" class="btn btn-primary">Cadastrar</button>
 
                          </div>
 
@@ -233,6 +230,93 @@
 
                     </div>
 </section>    
+
+
+<footer>
+
+      <div class="container">
+        <form class="form form-inline" role="form">
+        <div class="row no-gutters">
+          <div class="col-xs-3">
+
+
+
+           <div class="sac">
+
+                     <p> 0800 772-3322 </p>
+                 </div>
+
+                             <div class="sac2">
+             <p> Sac Merck cuida</p>
+                </div>
+
+
+
+
+
+
+
+         
+    </div>
+
+
+      <div class="col-xs-2">
+        <div class="form-inline">
+        <div class="cadastro">
+      <a href="#services" class="btn-Cadastro">Cadastre-se</a>
+   </div>
+      </div>
+       </div>
+
+
+         <div class="col-xs-2">
+                 <div class="form-inline">
+   <div class="Login">
+            <a  href="#services" class="btn-Login">Login</a>
+          </div>
+
+ </div>
+
+
+ </div>
+
+
+
+      <div class="col-xs-1">
+
+         <div class="bulario">
+      <a href="#services" class="btn-Bulario">Bulário</a>
+   </div>
+
+
+ </div>
+
+      
+
+    
+           <div class="col-xs-3">
+ <div class="TextoMerck1">
+   
+    <p>M</p>
+    <div>
+
+
+
+    <div class="TextoMerck2">
+     <p>Merck Atende</p>
+</div>
+
+      </div>
+  
+
+
+ </form>
+
+
+          </div>
+    </footer>
+
+
 
  <!-- Bootstrap core JavaScript -->
     <script  src="{{ asset('js/jquery.min.js')}}"></script>

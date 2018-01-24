@@ -17,8 +17,8 @@
       <div class="wow fadeIn">
    
 
-        <h1>MCuida</h1>
-        <h2>Desconto de até 40% em medicamentos</span></h2>
+        <h1 class="MCuida">MCuida</h1>
+        <h2 class="desconto">Desconto de até 40% em medicamentos</h2>
       
         <div class="actions">
           <a href="#services" class="btn-services">Cadastre-se</a>
@@ -60,5 +60,8 @@
 
 
 </body>
+
+
+
 
 </html>

@@ -308,16 +308,7 @@ margin-bottom: 200px;
    font-family: 'merck';
 
 }
-body {
-	line-height: 1.4;
-	font-family: 'Arial', sans-serif;
-    color: #67696c;
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: 0.5px;
-    overflow-x: hidden;
-}
-ol, ul {
+ ul {
 	list-style: none;
 }
 blockquote, q {
@@ -537,6 +528,8 @@ letter-spacing:3px;
     border:0px;
     padding: 20px 0; 
     transition: all 0.3s;
+
+    margin-top: -20px;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
@@ -551,7 +544,8 @@ letter-spacing:3px;
 
 .logo-dec
 {
-    color: #be9e21;
+    color: #93ce43;
+    font-family: 'merck';
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -564,10 +558,11 @@ letter-spacing:3px;
 }
 .navbar-brand {
     padding: 0px;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     padding: 15px 0px;
     margin-top: 6px;
+    font-family: 'merck';
 }
 .navbar-default .navbar-nav > li > a
 {
@@ -1262,3 +1257,106 @@ body{
 
 }
 
+
+
+.cadastro{
+display: inline-block;
+
+  margin-left: 150px;
+margin-top: 30px;
+  border: 1.3px solid #fff;
+  color: #fff;
+      width: 100px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+ font-size: 12px;
+border-radius: 6px;
+
+}
+
+.sac p{
+
+font-size: 25px;
+    color: white;
+    font-family:'merck';
+  margin-top: 20px;
+}
+
+.sac2{
+font-size: 20px;
+    color: white;
+    font-family:'merck';
+}
+
+
+  #TextoMerck {
+
+   
+font-family: "Merck";
+
+    font-size:55px; 
+    font-weight: 900;
+    color: #5a2994;
+margin-left: 200px;
+
+  }
+
+  .textoMerck1 p{
+
+
+
+margin-left: 210px;
+margin-top: 30px;
+color:white;
+font-family:'merck';
+}
+.textoMerck2 p{
+margin-left: 150px;
+
+color:white;
+font-family:'merck';
+}
+
+
+.bulario{
+  border: 1.4px solid #94cf43;
+  color: #94cf43;
+  text-align: center;
+ font-size: 12px;
+      width: 80px;
+height: 25px;
+margin-left: 160px;
+border-radius: 6px;
+margin-top: 30px;
+display: inline-block;
+}
+
+.bulario a{
+color: #94cf43;
+}
+
+footer {
+    background-color: #5c2791;
+    padding: 20px 0 0;
+}
+
+
+
+
+.Login{
+ background: #94cf43;
+  border: 2px solid #94cf43;
+  color: #5c2791;
+  width: 80px;
+   font-size: 12px;
+   font-weight:bold; 
+   margin-top: 30px;
+
+text-align:center;
+height: 25px;
+border-radius: 6px;
+
+
+
+}
