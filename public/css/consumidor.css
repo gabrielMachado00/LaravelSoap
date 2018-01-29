@@ -18,6 +18,18 @@ background-color: white;
 color:  #13bed0;
 
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #522e92 inset;
+    color: white;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+
 #Autorizo{
 
 background-color: #13bed0;

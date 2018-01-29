@@ -26,9 +26,15 @@
 <p>O que é</p>
 
 </div>
+
+
+
 <div id="Texto2">
   <p>Merck Cuida?</p>
 </div>
+
+
+
 <div id="div1">
 	<p class="text-sm-left">
  	Merck Cuida é um programa de descontos que tem a finalidade de 
@@ -47,11 +53,17 @@
  		</p>
 
  	</div>
+
+
+
+
 <div id="div2">	
 <p>
  	Para saber como se beneficiar do desconto basta
 </p>
 </div>	
+
+
 <div id="roxo">
  	<p> 
 
@@ -62,6 +74,8 @@
 <p > Nele,Temos todas as informações necessárias para seu atendimento </p>
 
 </div>
+
+
 </div>
 
 
@@ -72,34 +86,29 @@
 	
 		 </div>
 
+
+
+
+
+
 </div>
+
+
 </div>
 
 
-   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.js"></script>
-    <script src="js/bootstrap.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/custom.js"></script>
+          </div>
 
 
 
-    <script  src="{{ asset('js/jquery.min.js')}}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
-    <script src="{{ asset('js/contact_me.js')}}"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="{{ asset('js/agency.min.js')}}"></script>
-</body>
+
+
+
+
+
 
 
 
@@ -186,3 +195,26 @@
 
           </div>
     </footer>
+
+
+
+
+   
+
+    <script  src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ asset('js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/agency.min.js')}}"></script>
+
+</body>
+  
+
+</html>

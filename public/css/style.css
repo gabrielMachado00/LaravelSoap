@@ -10,15 +10,7 @@
 }
 
 
-body {
-	line-height: 1.4;
-	font-family: 'Arial', sans-serif;
-    color: #67696c;
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: 0.5px;
-    overflow-x: hidden;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -126,6 +118,7 @@ ul li {
 
  #Texto p{
 
+
 font-weight: 900px;
 font-family:'merck';
 margin-left: 80px;
@@ -165,17 +158,7 @@ margin-top:300px;
   
   }
   
-  #TextoMerck{
-
-   
-font-family: "Merck";
-
-    font-size:55px; 
-    font-weight: 900;
-    color: #5a2994;
-    
-
-  }
+ 
 
 .text-left{
 
@@ -183,15 +166,8 @@ font-family: "Merck";
 
   }
  
-  #TextoMerck2{
-    
-       margin-top:-25px;
-        font-size:55px; 
-        font-weight: 900;
-        color: #5a2994;
-        
-    
-      }
+
+
         #div1{
     margin-top: 40px;
     margin-left: 80px;
@@ -713,10 +689,7 @@ contact
 contact
 ************************************
 ***********************************/
-#footer
-{
-    padding: 20px 0px;
-}
+
 .scrollToTop {
     position: fixed;
     bottom: 12px;
@@ -735,10 +708,6 @@ contact
 .white-bg
 {
     background-color: #fff;
-}
-#footer a{
-    color: #be9e21;
-    font-weight: 400;
 }
 /***********************************
 ************************************
@@ -804,9 +773,7 @@ h1.bnr-title {
 h2.bnr-sub-title {
     font-size: 33px;
 }
-body{
-    font-size: 14px;
-}
+
 .btn-download, .btn-more, .btn-download:hover, .btn-more:hover, .btn-download:focus, .btn-more:focus {
     font-size: 12px;
     padding: 7px 18px;
@@ -925,10 +892,6 @@ body{
 
 
 
-
-
-
-
 .cadastro{
 display: inline-block;
 
@@ -959,20 +922,29 @@ font-size: 20px;
     font-family:'merck';
 }
 
+.Login{
+ background: #94cf43;
+  border: 2px solid #94cf43;
+  color: #5c2791;
+  width: 80px;
+   font-size: 12px;
+   font-weight:bold; 
+   margin-top: 30px;
 
-  #TextoMerck {
+text-align:center;
+height: 25px;
+border-radius: 6px;
 
-   
-font-family: "Merck";
 
-    font-size:55px; 
-    font-weight: 900;
-    color: #5a2994;
-margin-left: 200px;
 
-  }
+}
+.btn-cadastro {
 
-  .textoMerck1 p{
+
+color: white;
+
+}
+.textoMerck1 p{
 
 
 
@@ -981,13 +953,13 @@ margin-top: 30px;
 color:white;
 font-family:'merck';
 }
-.textoMerck2 p{
+
+.textoMerck2 {
 margin-left: 150px;
 
 color:white;
 font-family:'merck';
 }
-
 
 .bulario{
   border: 1.4px solid #94cf43;
@@ -1006,29 +978,23 @@ display: inline-block;
 color: #94cf43;
 }
 
+
+
 footer {
     background-color: #5c2791;
     padding: 20px 0 0;
 }
 
 
-
-
-.Login{
- background: #94cf43;
-  border: 2px solid #94cf43;
-  color: #5c2791;
-  width: 80px;
-   font-size: 12px;
-   font-weight:bold; 
-   margin-top: 30px;
-
-text-align:center;
-height: 25px;
-border-radius: 6px;
-
-
+.col-sm-4 .cadastro .btn-Login{
 
 }
 
+.row .fa{
+
+margin-top: 30px;
+color:#ffc90d;
+margin-left: 50px;
+
+}
 

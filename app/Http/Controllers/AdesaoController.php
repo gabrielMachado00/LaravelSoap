@@ -59,6 +59,10 @@ $descricao=$produto->DESCRICAO;
   return view('InserirAdesao',compact('produtos','descricao'));
 
   }
+
+
+
+
   public function AddAdesao(){
 
 return view('InserirAdesao');
@@ -122,7 +126,7 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 (float)Request::input('CPF'),
 Request::input('DataNasc'), Request::input('senha'), 
- Request::input('Cartao'),(float)Request::input('produto'),'',Request::input('CodProf'),
+ (int)Request::input('Cartao'),(float)Request::input('produto'),'',Request::input('CodProf'),
   Request::input('UFProf')
 ,Request::input('NomeProf'))
 
@@ -143,7 +147,7 @@ $produtos=DB::table('mk_produtos')->limit(1)->get();
 $sessao, '0',$hr_central, 'AP00','041', '00000000','66','0', '88','ADESSITE',
 (float)Request::input('CPF'),
 Request::input('DataNasc'), Request::input('senha'), 
- Request::input('Cartao'),7891721017261,'',Request::input('CodProf'),
+ (int)Request::input('Cartao'),7891721017261,'',Request::input('CodProf'),
   Request::input('UFProf'),
 Request::input('NomeProf')
 );
@@ -151,6 +155,20 @@ Request::input('NomeProf')
 
 
 
+
+
+
+
+
+$status=$response->AdesaoPrdResult->StatusServico;
+
+
+if($status>19){
+
+$texto=$response->AdesaoPrdResult->TextoInformativo;
+
+    return View('InserirAdesao',compact('status','texto','produtos'));
+}
 
 
 
@@ -186,7 +204,6 @@ $DataNasc=$adesao->DataNascConsumidor;
 $senha=$adesao->ControlePSW;
 $ean=$adesao->EAN;
 
-$cpfSession= $request->session()->put('cpfSession',$cpf);
 
 
 

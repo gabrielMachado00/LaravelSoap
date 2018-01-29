@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;
 use App\Http\Controllers\Controller;
 use Request;
-
+use Illuminate\Http\Request as req;
 
 
 class LoginConsumidorController extends Controller
@@ -32,7 +32,7 @@ return View('LoginConsumidor');
 
 
 
-  public function Login(Request $request) {
+  public function Login(req $request) {
 
   $cuida=DB::table('mk_integrador')->limit(1)->get();
 
@@ -98,17 +98,22 @@ $data=date("Y-m-d") . "T" . date("H:i:s");
 
 
 ]);
+$status=$response->ConsultaAdesoesResult->StatusServico;
 
+if($status>19){
+
+$texto=$response->ConsultaAdesoesResult->TextoInformativo;
+
+
+return View('LoginConsumidor',compact('texto','status'));
+}
 
 $cpf=$response->ConsultaAdesoesResult->CPFConsumidor;
 $DataNasc=$response->ConsultaAdesoesResult->Lista->Produtos->DataNascimento;
 $cartao=$response->ConsultaAdesoesResult->Lista->Produtos->Cartao;
  $ean=$response->ConsultaAdesoesResult->Lista->Produtos->EAN;
  
-
-
-
-
+ $desconto=$response->ConsultaAdesoesResult->Lista->Produtos->Desconto;
 
  $response1 = $this->soapWrapper->call('Cadastro.ConsultaCadastroPF',
   [
@@ -146,8 +151,39 @@ $AceitaFone=$response1->ConsultaCadastroPFResult->AceitaFone;
 $AceitaSMS=$response1->ConsultaCadastroPFResult->AceitaSMS;
 $AceitaEmail=$response1->ConsultaCadastroPFResult->AceitaEmail;
 
+
+
 var_dump($response);
 var_dump($response1);
+$request->session()->put('cartao', $cartao);
+$request->session()->put('senha', $senha);
+$request->session()->put('nome', $nome);
+$request->session()->put('desconto', $desconto);
+$request->session()->put('sexo', $sexo);
+$request->session()->put('cep', $cep);
+$request->session()->put('ean', $ean);
+$request->session()->put('uf', $uf);
+$request->session()->put('TipoLogradouro', $TipoLogradouroConsumidor);
+$request->session()->put('Logradouro', $LogradouroConsumidor);
+$request->session()->put('NrEndereco', $NrEnderConsumidor);
+$request->session()->put('Cidade', $CidadeConsumidor);
+$request->session()->put('Bairro', $BairroConsumidor);
+$request->session()->put('ComplementoEndereco', $ComplEnderConsumidor);
+$request->session()->put('DDDCelular', $DDDCelular);
+$request->session()->put('FoneCelular', $FoneCelular);
+$request->session()->put('DDDFixo', $DDDFixo);
+$request->session()->put('FoneFixo', $FoneFixo);
+$request->session()->put('EmailConsumidor', $EmailConsumidor);
+$request->session()->put('AceitaMaterial', $AceitaMaterialInformativo);
+$request->session()->put('AceitaUsodosDados', $AceitaUsodosDados);
+$request->session()->put('AceitaCorreio', $AceitaCorreio);
+$request->session()->put('AceitaUsodosDados', $AceitaUsodosDados);
+$request->session()->put('AceitaFone', $AceitaFone);
+$request->session()->put('AceitaSMS', $AceitaSMS);
+$request->session()->put('AceitaEmail', $AceitaEmail);
+
+
+
 
 
 

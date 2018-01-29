@@ -1,5 +1,7 @@
 
- 
+ <!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+
   <head>
 
     <meta charset="utf-8">
@@ -40,24 +42,33 @@
 
 
 
+
+   @if(!empty($status))
+
+
+<h1>{{$texto}}</h1>
+
+@endif
+
+
     <form method="post">
 
 
 
-		         <input type="hidden" name="_token" value="{{ csrf_token()}}">
+             <input type="hidden" name="_token" value="{{ csrf_token()}}">
                                  
                       <div class="form-group row">
   
-    <div class="col-sm-4 offset-md-4">
-						<input type="text" name="CPF" id="CPF" class="form-control" placeholder="CPF"  required/>
+   
 
-					</div>
+ 
+
               
           </div>    
    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-      <input type="email" class="form-control " id="colFormLabelSm" placeholder="email">
+      <input type="email" class="form-control " id="colFormLabelSm" onblur="myFunction()" placeholder="email">
     </div>
     </div>
 
@@ -65,8 +76,8 @@
                      <div class="col-sm-4 offset-md-4">
                            
 
-						<input type="text"  name="DataNasc" id="DataNasc" class="form-control" placeholder="Data de Nascimento" autocomplete="off" value="" required/>
-		              </div>
+            <input type="text"  name="DataNasc" id="DataNasc" class="form-control" placeholder="Data de Nascimento" autocomplete="off" value="" required/>
+                  </div>
                   
                     </div>
 
@@ -79,7 +90,7 @@
                      <div class="col-sm-4 offset-md-4">
                            
                  
-				<select name="produto" id="produto" class="form-control" placeholder="produto" name="role_id">
+        <select name="produto" id="produto" class="form-control" placeholder="produto" name="role_id">
 
              
             @foreach($produtos as $produto)
@@ -88,11 +99,11 @@
                  @endforeach
                             
                   
-		             
+                 
                       
                       </select>
 
-		                </div>
+                    </div>
 </div>
 
 
@@ -100,35 +111,35 @@
                          <div class="form-group row">
                      <div class="col-sm-4 offset-md-4">
                            
-					 
-						<input type="text" class="form-control" placeholder="Codigo do Profissional" name="CodProf"  required/>
-	                      </div>
-					</div>
+           
+            <input type="text" class="form-control" placeholder="Codigo do Profissional" name="CodProf"  required/>
+                        </div>
+          </div>
            
              
                          <div class="form-group row">
                      <div class="col-sm-4 offset-md-4">
                            
-				
-					<input type="text" class="form-control" id="UFProf" name="UFProf" value="" placeholder="UF" required/>
+        
+          <input type="text" class="form-control" id="UFProf" name="UFProf" value="" placeholder="UF" required/>
 
-					
-					</div>
+          
+          </div>
                     </div>
 
                          <div class="form-group row">
                      <div class="col-sm-4 offset-md-4">
                            
-				
-						<input type="text" class="form-control" name="NomeProf" placeholder="Nome do Profissional" required/>
-							   </div>
-					</div>
+        
+            <input type="text" class="form-control" name="NomeProf" placeholder="Nome do Profissional" onblur="myFunction()" required/>
+                 </div>
+          </div>
 
                     <div class="form-group row">
                      <div class="col-sm-4 offset-md-4">
                            
 
-            <input type="text"  name="senha" id="senha" class="form-control"  autocomplete="off"  placeholder="senha" required/>
+            <input type="text"  name="senha" id="senha" class="form-control"  autocomplete="off" onblur="myFunction()" placeholder="senha" required/>
                   </div>
                   
                     </div>
@@ -144,7 +155,7 @@
                  </div>
                    </div>
       <input type="hidden" id="datanasc_unmask" name="dataNasc " value="" />
-						<input type="hidden" name="Cartao" value="0" />
+            <input type="hidden" name="Cartao" value="0" />
 
 
    <div class="form-group row">
@@ -153,11 +164,11 @@
 <button class="btn btn-primary btnMensagem"   >Próximo</button>                
  </div>
 
-		                </div>
-		                  </div>
+                    </div>
+                      </div>
 
 
-					</form>
+          </form>
 
 
      <!---->
@@ -203,6 +214,8 @@
     <p class="aceita">O Usuário aceita e autoriza que os seus Dados Pessoais sejam objeto de </p>
 
  
+
+
  <p class="aceita1">tratamento por parte da MERCK,a qual o Usuário declara ter plena ciência </p>
   
        <div class="aceita2">
@@ -316,7 +329,6 @@
     </footer>
 
 
-
  <!-- Bootstrap core JavaScript -->
     <script  src="{{ asset('js/jquery.min.js')}}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
@@ -331,4 +343,22 @@
     <!-- Custom scripts for this template -->
     <script src="{{ asset('js/agency.min.js')}}"></script>
 
+
+
+<script type="text/javascript">
+
+
+  function myFunction() {
+  $("input").click(function(){
+    
+    /* a função muda o background da div com id="box" */  
+    $("input").css("background","#522e92");
+  
+  }
+</script>
+
+
   </body>
+
+
+</html>

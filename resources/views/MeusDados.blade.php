@@ -113,8 +113,8 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Sexo">Sexo:</label>
-				<label><input type="radio" name="Sexo" value="77" required/>Masculino</label>
-				<label><input type="radio" name="Sexo" value="70" required/>Feminino</label>
+				<label><input type="radio" name="Sexo" id="masc" value="77" required/>Masculino</label>
+				<label><input type="radio" name="Sexo" id="fem" value="70" required/>Feminino</label>
 
 				</div>
 			</div>
@@ -238,7 +238,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="MatInfo">Material Informativo:
-				<input type="checkbox" name="MatInfo" value="{{$AceitaMaterialInformativo}}"/></label>
+				<input type="checkbox" name="MatInfo" id="MatInfo" value="{{$AceitaMaterialInformativo}}"/></label>
 
 												</div>
 			</div>
@@ -247,7 +247,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="UsoDados">Uso de Dados:
-				<input type="checkbox" name="UsoDados" value="{{$AceitaUsodosDados}}"/></label>
+				<input type="checkbox" name="UsoDados" id="UsoDados" value="{{$AceitaUsodosDados}}"/></label>
 														</div>
 			</div>
 
@@ -256,7 +256,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Correio">Correio:
-				<input type="checkbox" name="Correio" value="{{$AceitaCorreio}}"/></label>
+				<input type="checkbox" name="Correio" id="correio" value="{{$AceitaCorreio}}"/></label>
 																</div>
 			</div>
 
@@ -265,9 +265,9 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="AceitaTele">Aceita telefone:
-				<input type="checkbox" name="AceitaTele" value="{{$AceitaFone}}"/></label>
+				<input type="checkbox" name="AceitaTele" id="AceitaTele" value="{{$AceitaFone}}"/></label>
 				<label for="AceitaSMS">Aceita SMS:
-				<input type="checkbox" name="AceitaSMS" value="{{$AceitaSMS}}"/></label>
+				<input type="checkbox" name="AceitaSMS" id="AceitaSMS" value="{{$AceitaSMS}}"/></label>
 																	</div>
 			</div>
 
@@ -277,7 +277,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="AceitaEmail">Aceita email:
-				<input type="checkbox" name="AceitaEmail" value="{{$AceitaEmail}}"/></label>
+				<input type="checkbox" id="AceitaEmail" name="AceitaEmail" value="{{$AceitaEmail}}"/></label>
 																				</div>
 			</div>
 
@@ -306,3 +306,66 @@
 
 			</form>
   
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+    
+    if($("#AceitaEmail").val()=='83'){
+$('#AceitaEmail').prop('checked', true);
+    }
+    /* a função muda o background da div com id="box" */  
+  if($("#AceitaSMS").val()=='83'){
+$('#AceitaSMS').prop('checked', true);
+    }
+
+  if($("#AceitaTele").val()=='83'){
+$('#AceitaTele').prop('checked', true);
+    }
+
+  if($("#AceitaFone").val()=='83'){
+$('#AceitaTele').prop('checked', true);
+    }
+
+  if($("#AceitaFone").val()=='83'){
+$('#AceitaFone').prop('checked', true);
+    }
+
+      if($("#UsoDados").val()=='83'){
+$('#UsoDados').prop('checked', true);
+    }
+
+   if($("#MatInfo").val()=='83'){
+$('#MatInfo').prop('checked', true);
+    }
+
+   if($("#correio").val()=='83'){
+$('#correio').prop('checked', true);
+    }
+
+
+   if($("#correio").val()=='83'){
+$('#correio').prop('checked', true);
+    }
+
+
+
+
+   if($("#masc").val()=='77'){
+$('#masc').prop('checked', true);
+    }
+
+else{
+
+$('#fem').prop('checked', true);
+
+}
+
+
+
+  });
+</script>

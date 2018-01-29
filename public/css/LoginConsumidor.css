@@ -82,6 +82,7 @@ background-color:#522e92;1'
 
     background-color: #522e92;
       background-size: cover;
+      padding: 50px;
 
 }
 .row select{
@@ -320,6 +321,8 @@ color: #94cf43;
 footer {
     background-color: #5c2791;
     padding: 20px 0 0;
+    bottom: 0px;
+    width: 100%;
 }
 
 

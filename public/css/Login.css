@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: 'merck';
     src: url('/fonts/Merck.otf');
@@ -19,14 +18,25 @@ background-color: white;
 color:  #13bed0;
 
 }
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #522e92 inset;
+    color: white;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+
 #Autorizo{
 
 background-color: #13bed0;
 
 }
-.row .filho h1{ 
-color: #ffc90d;
-}
+
 
 .last-letter{
 
@@ -52,38 +62,48 @@ color: #522e92;
     font-size:14px; 
 font-weight: 500;
 }
-.row h1{
 
-  color:#12bdd0;
-  font-family: 'merck';
-  font-size: 100px;
-
+input:not(:focus) {
+  color: white;
+  background-color:#522e92;
 }
 .row input{
 
 border-color: #12bdd0;
 
   border-width: 1.5px;
-
+color: white;
 border-radius: 7px;
 background-color:#522e92;
+}
+
+.row input:focus {
+    background-color: #522e92;
+    color: white;
 }
 .row select{
 
   border-color: #12bdd0;
 
   border-width: 1.5px;
-
+color:white;
 border-radius: 7px;
 background-color:#522e92;1'
 }
+
+
+
+
 .bg-color
 {
 
-    background-color: #522e92;
-      background-size: cover;
+background-color: #12bdd0;
+  background-size: cover;
+   
 
 }
+
+
 .row select{
  color: white;
 
@@ -114,8 +134,10 @@ font-size: 30px;
 
 }
 body {
- background-color: #522e92;
- margin-top:100px; 
+ width: 100%;
+
+background-color: #12bdd0;
+
 }
 #Autorizo {
 
@@ -144,15 +166,7 @@ background-color: #13bed0;
 width: 120px;
 }
 
-.cadastro{
 
-
-
-border-radius: 6px;
-background-color: #522e92;
-font-size: 12px;
-width:100px; 
-}
 .cadastro2{
 
   margin-top: -40px;
@@ -161,14 +175,11 @@ width:100px;
   font-family: 'merck';
   font-size: 75px;
 }
-body {
-  overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 
 
 #mainNav {
-  background-color: #212529;
+  background-color: black;
   margin-left: -150px;
   margin-top: -20px
 }
@@ -200,6 +211,8 @@ body {
   letter-spacing: 1px;
   color: white;
   font-family: 'Arial';
+  color: black;
+  font-weight: 900;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -236,108 +249,43 @@ body {
   }
 
 
-
-
-.cadastro{
-display: inline-block;
-
-  margin-left: 150px;
-margin-top: 30px;
-  border: 1.3px solid #fff;
-  color: #fff;
-      width: 100px;
-height: 25px;
-margin-right: 10px;
-text-align: center;
- font-size: 12px;
-border-radius: 6px;
-
-}
-
- p.sac{
-
-font-size: 25px;
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
     color: white;
-    font-family:'merck';
-  margin-top: 20px;
-}
-
-p.sac2{
-font-size: 20px;
-    color: white;
-    font-family:'merck';
+    font-weight: bold;
 }
 
 
-  #TextoMerck {
+.pacientes{
 
-   
-font-family: "Merck";
-
-    font-size:55px; 
-    font-weight: 900;
-    color: #5a2994;
-margin-left: 200px;
-
-  }
-
-  p.textoMerck1 {
-
-font-size: 16px;
-margin-left: 340px;
-margin-top: 80px;
-color:white;
-font-family:'merck';
-}
-
-
-
-.textoMerck2 p{
-margin-left: 300px;
-margin-top: -20px;
-color:white;
-font-family:'merck';
-}
-
-
-.bulario{
-  border: 1.4px solid #94cf43;
-  color: #94cf43;
-  text-align: center;
- font-size: 12px;
-      width: 80px;
-height: 25px;
-margin-left: 160px;
-border-radius: 6px;
-margin-top: 30px;
-display: inline-block;
-}
-
-.bulario a{
-color: #94cf43;
-}
-
-footer {
-    background-color: #5c2791;
-    padding: 20px 0 0;
-}
-
-
-
-
-.Login{
- background: #94cf43;
-  border: 2px solid #94cf43;
-  color: #5c2791;
-  width: 80px;
-   font-size: 12px;
-   font-weight:bold; 
-   margin-top: 30px;
-
-text-align:center;
-height: 25px;
-border-radius: 6px;
-
-
+ -webkit-transform: skew(-10deg); /* Chrome, Opera */
+      -ms-transform: skew(-10deg); /* IE */
+          transform: skew(-10deg);
 
 }
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+span{
+  font-size: 40px;
+  font-family: 'merck';
+  font-weight:900; 
+color:#502d8e;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+

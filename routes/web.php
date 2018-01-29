@@ -27,6 +27,11 @@
 
   Route::get('/CuideSe', 'CuideController@Cuide');
 
+    Route::get('/AtualizaConsumidor', 'AtualizaAdesaoController@AtualizaAdesao');
+
+  Route::get('/MeusDados', 'MeusDadosController@Dados');
+
+
 
   Route::get('/VerLoja', 'MapsController@Import');
   
@@ -38,6 +43,8 @@
 
   Route::get('/LoginConsumidor', 'LoginConsumidorController@LoginConsumidor');
 
+
+  Route::get('/LoginGeral', 'LoginGeralController@LoginGeral');
 
   Route::get('/Sobre', 'SobreController@Sobre');
   

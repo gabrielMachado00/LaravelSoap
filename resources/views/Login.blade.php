@@ -22,7 +22,7 @@
       
         <div class="actions">
           <a href="#services" class="btn-services">Cadastre-se</a>
-          <a href="#about" class="btn-get-started">Login</a>
+          <a href="/LoginGeral" class="btn-get-started">Login</a>
           
         </div>
       </div>
@@ -31,6 +31,13 @@
 
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+
+
+
 
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
