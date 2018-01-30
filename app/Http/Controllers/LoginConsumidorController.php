@@ -188,7 +188,7 @@ $request->session()->put('AceitaEmail', $AceitaEmail);
 
 
 
-return view ('MeusDados',compact('nome','Cartao','sexo','cpf','senha','cartao','DataNasc','cep','uf','CidadeConsumidor','BairroConsumidor','TipoLogradouroConsumidor','LogradouroConsumidor','NrEnderConsumidor','ComplEnderConsumidor','DDDCelular','FoneCelular','DDDFixo','FoneFixo','EmailConsumidor','AceitaMaterialInformativo','AceitaUsodosDados','AceitaCorreio','AceitaFone','AceitaSMS','AceitaEmail','ean'));
+return view ('MeusDados',compact('nome','Cartao','sexo','cpf','desconto','senha','cartao','DataNasc','cep','uf','CidadeConsumidor','BairroConsumidor','TipoLogradouroConsumidor','LogradouroConsumidor','NrEnderConsumidor','ComplEnderConsumidor','DDDCelular','FoneCelular','DDDFixo','FoneFixo','EmailConsumidor','AceitaMaterialInformativo','AceitaUsodosDados','AceitaCorreio','AceitaFone','AceitaSMS','AceitaEmail','ean'));
 
 
 }

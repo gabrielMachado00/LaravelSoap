@@ -13,11 +13,10 @@
 body {
 	line-height: 1.4;
 	font-family: 'Arial', sans-serif;
-   
+    margin-top:140px; 
     font-size: 14px;
     font-weight: 100;
     background-color: #ffc90d;
-        margin-top:140px; 
 }
 
 #Busca2 p{
@@ -266,16 +265,16 @@ margin-left: 20px;
 }
 label.col-sm-12 .offset-md-7{
 
-margin-top: 30px;
+
 
 }
 .row .label{
 
-  margin-top: 100px;
+
 }
 .col-sm-4 .form-group label{
 
-margin-top: 50px;
+
 }
 .col-md-2 .pesquisa{
 
@@ -292,12 +291,7 @@ border-radius: 8px;
 margin-left: 100px;
 
 }
-.col-xs-3  .raio .form-inline  label{
 
-margin-left:  20px;
-margin-top: 50px;
-
-}
 button{
   border-color:#5a2994;
   background-color:#5a2994;
@@ -353,9 +347,9 @@ margin-top: 40px;
   width: 50px;
 }
 
-.row input{
+  .row input{
 
-display: inline-block;
+
 border-color: #5b2a95;
 border-radius:6px;
 border-width:3px;

@@ -140,7 +140,7 @@ background-color: black;
 
               <li class="" ><a href="{{ url('/Cadastro/Adesao') }}">Cadastro</a></li>
    
-                 
+                   <li class="" ><a href="{{ url('/LoginGeral') }}">Login</a></li>
                 </ul>
               </div>
             </div>

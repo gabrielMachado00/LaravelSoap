@@ -9,25 +9,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                           <a class="nav-link" href="{{ url('Home') }}">Home</a>
+                           <a class="nav-link" href="{{ url('MeusDados') }}">MeusDados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('Sobre') }}">Sobre</a>
+              <a class="nav-link" href="{{ url('AtualizaConsumidor') }}">AtualizaAdesao</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('ProcureLoja') }}">Redes Credenciadas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('/CuideSe') }}">Blog-Cuide-se</a>
-            </li>
-
-              <li class="nav-item">
-              <a class="nav-link" href="{{ url('/Cadastro/Adesao') }}">Cadastro</a>
-            </li>
-
-              <li class="nav-item">
-              <a class="nav-link" href="{{ url('/LoginGeral') }}">Login</a>
-            </li>
+          
           </ul>
         </div>
       </div>

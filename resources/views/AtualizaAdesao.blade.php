@@ -25,16 +25,8 @@
 
 <body>
    <div class="bg-color">
-
-        <div class="row">
-          <div class="col-md-4 offset-md-4">
-
-          
-                 <p class="cadastro1">Novo</p>
-
-                  <p class="cadastro2">Cadastro</p>
-          </div>  
-        </div>
+@Include('layouts.MenuLogin')
+      
 
 
 
@@ -89,7 +81,7 @@
                      <div class="col-sm-4 offset-md-4">
                                <label class="col-sm-12 offset-md-3">Desconto</label>
 
-            <input type="text"  name="DataNasc" id="DataNasc" class="form-control" autocomplete="off" value="{{$Desconto}}%" required/>
+            <input type="text"  name="DataNasc" id="DataNasc" class="form-control" autocomplete="off" value="{{$desconto}}%" required/>
                   </div>
                   
                     </div>

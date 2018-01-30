@@ -65,10 +65,19 @@
 
               
           </div>    
+ <div class="form-group row">
+  
+    <div class="col-sm-4 offset-md-4">
+      <input type="text" class="form-control " name="CPF" id="colFormLabelSm" onblur="myFunction()" placeholder="CPF">
+    </div>
+
+</div>
+
+
    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-      <input type="email" class="form-control " id="colFormLabelSm" onblur="myFunction()" placeholder="email">
+      <input type="email" class="form-control " name="email" id="colFormLabelSm" onblur="myFunction()" placeholder="email">
     </div>
     </div>
 

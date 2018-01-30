@@ -115,7 +115,7 @@ if ($sessao == ''){
 $Nrdata=date("Ymd");
 $data=date("Y-m-d") . "T" . date("H:i:s");
 
-
+$cartao=(int)Request::input('Cartao');
 
 
  $response = $this->soapWrapper->call('Adesao.AdesaoPrd',
@@ -133,7 +133,7 @@ Request::input('DataNasc'), Request::input('senha'),
 
 
 ]);
-
+  
 
 
 $produtos=DB::table('mk_produtos')->limit(1)->get();
@@ -210,7 +210,7 @@ $ean=$adesao->EAN;
 
 var_dump($DataNasc);
 
-
+    
 
 return view('InserirConsumidor',compact('response','cpf','ean','DataNasc','senha','produtos','descricao','nrCentral'));
 

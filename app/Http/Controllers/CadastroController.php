@@ -48,7 +48,7 @@ $cpf=Request::input('CPFCadastro');
   
     $this->soapWrapper->add('PDVCadastroPFV1', function ($service) {
       $service
-        ->wsdl('https://security.tc2b.com.br/PDVCadastroPFV1.asmx?WSDL')
+        ->wsdl('https://sc3.tc2b.net.br/msgweb2/PDVCadastroPFV1.asmx?WSDL')
         ->trace(true)
       
     ->classmap([
@@ -82,7 +82,8 @@ Request::input('ComplementoEnd'),
   Request::input('AceitaTele'),
  Request::input('AceitaSMS'),
  Request::input('AceitaEmail'),
- Request::input('SenhaCadastro')
+  Request::input('SenhaCadastro')
+ 
  
  )
 ]);

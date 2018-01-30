@@ -28,13 +28,13 @@ class AtualizaAdesaoController extends Controller
 $cartao=$response->session()->get('cartao');
 $nome=$response->session()->get('nome');
 $cpf=$response->session()->get('cpf');
-$Desconto=$response->session()->get('Desconto');
+$Desconto=$response->session()->get('desconto');
 $ean=$response->session()->get('ean');
 
+$desconto=$Desconto/100;
 
 
-
-return View('AtualizaAdesao',compact('cpf','nome','cartao','ean','Desconto'));
+return View('AtualizaAdesao',compact('cpf','nome','cartao','ean','desconto'));
   }
   
 }

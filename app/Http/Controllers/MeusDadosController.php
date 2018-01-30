@@ -32,13 +32,14 @@ class MeusDadosController extends Controller
 $cartao=$request->session()->get('cartao');
 $nome=$request->session()->get('nome');        
 $cpf=$request->session()->get('cpf');
-$Desconto=$request->session()->get('Desconto');
+$desconto=$request->session()->get('desconto');
 $ean=$request->session()->get('ean');
 
 
 $nome=$request->session()->get('nome');
 $senha=$request->session()->get('senha');
 $cep=$request->session()->get('cep');
+$sexo=$request->session()->get('sexo');
 $uf=$request->session()->get('uf');
 $bairro=$request->session()->get('bairro');
 $TipoLogradouro=$request->session()->get('TipoLogradouro');

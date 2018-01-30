@@ -8,6 +8,9 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
+ <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/MeusDados.css')}}" rel="stylesheet">
     <!-- Adicionando Javascript -->
     <script type="text/javascript" >
 
@@ -86,13 +89,15 @@
     </script>
     </head>
 
-    
-
+    <body>
+ <div class="bg-color">
    <form  method="post">
 
 
 
 
+ 
+@Include('layouts.MenuLogin')
 
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -102,19 +107,19 @@
   
     <div class="col-sm-4 offset-md-4">
                  <label for="Consumidor">Nome consumidor:</label>
-			<input type="text" name="Consumidor" value="{{$nome}}" required/>
+			<input type="text" name="Consumidor" value="{{$nome}}" cLass="form-control" required/>
 
 			</div>
 			</div>
 
 
 
-                      <div class="form-group row">
+                      <div class="form-group">
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Sexo">Sexo:</label>
-				<label><input type="radio" name="Sexo" id="masc" value="77" required/>Masculino</label>
-				<label><input type="radio" name="Sexo" id="fem" value="70" required/>Feminino</label>
+				<label><input type="radio" name="Sexo" id="masc" value="{{$sexo}}"  required/>Masculino</label>
+				<label><input type="radio" name="Sexo" id="fem" value="{{$sexo}}" required/>Feminino</label>
 
 				</div>
 			</div>
@@ -123,7 +128,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="CEP">CEP:</label>
-				<input type="text" name="CEP" value="{{$cep}}" id="cep" required/>
+				<input type="text" name="CEP" value="{{$cep}}" cLass="form-control" id="cep" required/>
 
 				</div>
 			</div>
@@ -132,14 +137,14 @@
   
     <div class="col-sm-4 offset-md-4">
 			    <label for="UF">UF:</label>
-				<input type="text" name="UF" id="uf" value="{{$uf}}" required/>
+				<input type="text" name="UF" id="uf" cLass="form-control" value="{{$uf}}" required/>
 					</div>
 			</div>
 					                    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Cidade">Cidade:</label>
-				<input type="text" name="Cidade" id="cidade" value="{{$CidadeConsumidor}}" required/>
+				<input type="text" name="Cidade" id="cidade" cLass="form-control" value="{{$CidadeConsumidor}}" required/>
 
 		</div>
 			</div>
@@ -148,14 +153,14 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Bairro">Bairro:</label>
-				<input type="text" name="Bairro" id="bairro" value="{{$BairroConsumidor}}" required/>
+				<input type="text" name="Bairro" id="bairro" cLass="form-control" value="{{$BairroConsumidor}}" required/>
 		</div>
 			</div>
 				                  <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
 				<label for="TLogradouro">Tipo Logradouro:</label>
-				<input type="text" name="TLogradouro" id="tipologradouro" value="{{$TipoLogradouroConsumidor}}" required/>
+				<input type="text" name="TLogradouro" id="tipologradouro" cLass="form-control" value="{{$TipoLogradouroConsumidor}}" required/>
 			
 	</div>
 			</div>
@@ -165,7 +170,7 @@
   
     <div class="col-sm-4 offset-md-4">
 	<label for="Logradouro">Logradouro:</label>
-				<input type="text" name="Logradouro" value="{{$LogradouroConsumidor}}" id="rua" required/>
+				<input type="text" name="Logradouro" cLass="form-control" value="{{$LogradouroConsumidor}}" id="rua" required/>
 
 					</div>
 			</div>
@@ -173,7 +178,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Numero">Numero:</label>
-				<input type="text" name="Numero"  value="{{	$NrEnderConsumidor}}" required/>
+				<input type="text" name="Numero" cLass="form-control" value="{{	$NrEnderConsumidor}}" required/>
 						</div>
 			</div>
 
@@ -181,7 +186,7 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="CompletmentoEnd">Complemento:</label>
-				<input type="text" name="ComplementoEnd" value="{{$ComplEnderConsumidor}}"/>
+				<input type="text" name="ComplementoEnd" cLass="form-control" value="{{$ComplEnderConsumidor}}"/>
 							</div>
 			</div>
 
@@ -192,7 +197,7 @@
     <div class="col-sm-4 offset-md-4">
 				<label for="TeleFixo">Telefone Fixo:</label>
 
-				<input type="text" name="TeleFixo_DD" value="{{$DDDFixo}}" required/>
+				<input type="text" name="TeleFixo_DD" cLass="form-control" value="{{$DDDFixo}}" required/>
 								</div>
 			</div>
 
@@ -201,7 +206,7 @@
   
     <div class="col-sm-4 offset-md-4">
 
-				<input type="text" id="Telefixo" name="Telefixo" value="{{$FoneFixo}}" required/>
+				<input type="text" id="Telefixo" cLass="form-control" name="Telefixo" value="{{$FoneFixo}}" required/>
 						</div>
 			</div>
 
@@ -214,7 +219,7 @@
     <div class="col-sm-4 offset-md-4">
 
 				<label for="Celular">Celular</label>
-				<input type="text" id="Celular_DD" name="Celular_DD" value="{{$DDDCelular}}" required/>
+				<input type="text" id="Celular_DD" name="Celular_DD" cLass="form-control" value="{{$DDDCelular}}" required/>
 							</div>
 			</div>
 
@@ -222,7 +227,7 @@
               <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-				<input type="text" id="Celular" name="Celular" value="{{$FoneCelular}}" required/>
+				<input type="text" id="Celular" name="Celular" cLass="form-control" value="{{$FoneCelular}}" required/>
 									</div>
 			</div>
 
@@ -230,58 +235,66 @@
   
     <div class="col-sm-4 offset-md-4">
 				<label for="Email">Email:</label>
-				<input type="email" name="Email" value="{{$EmailConsumidor}}" required/>
+				<input type="email" name="Email" cLass="form-control" value="{{$EmailConsumidor}}" required/>
 										</div>
 			</div>
 
-      <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-				<label for="MatInfo">Material Informativo:
-				<input type="checkbox" name="MatInfo" id="MatInfo" value="{{$AceitaMaterialInformativo}}"/></label>
-
-												</div>
-			</div>
-
-			     <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-				<label for="UsoDados">Uso de Dados:
-				<input type="checkbox" name="UsoDados" id="UsoDados" value="{{$AceitaUsodosDados}}"/></label>
-														</div>
-			</div>
+     
 
 
-	     <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-				<label for="Correio">Correio:
-				<input type="checkbox" name="Correio" id="correio" value="{{$AceitaCorreio}}"/></label>
-																</div>
-			</div>
+	           <div class="form-group ">
+         
+				
+
+			         <div class="col-sm-4 offset-md-4">
+                             
+                       <div class="form-check form-check-inline">
+		         	<label class="form-check-label" for="MatInfo" >
+                          
+                       
+				<input type="checkbox" name="MatInfo" class="form-check-input" value="{{$AceitaMaterialInformativo}}"/>Material Informativo</label>
+           </div>
+
+                      <div class="form-check form-check-inline">
+				<label class="form-check-label" for="UsoDados">
+
+				<input type="checkbox" class="form-check-input" name="UsoDados" value="{{$AceitaUsodosDados}}"/>Uso de Dados:</label>
+	                       </div>
+								 </div>
+								 	 </div>
+
+								 	
+
+    <div class="form-group">
+                     <div class="col-sm-4 offset-md-4">
+                     	      <div class="form-check form-check-inline">
+								<label class="form-check-label" for="Correio">
+				<input type="checkbox" name="Correio" id="correio" value="{{$AceitaCorreio}}"/>Correio:</label>
+									 </div>
+
+				 <div class="form-check form-check-inline">
+				<label for="AceitaTele" class="form-check-label" >
+				<input type="checkbox" name="AceitaTele" id="AceitaTele" value="{{$AceitaFone}}"/>Aceita telefone:</label>
+								 </div>
+                          </div>
+
+                   </div>
 
 
-  <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-				<label for="AceitaTele">Aceita telefone:
-				<input type="checkbox" name="AceitaTele" id="AceitaTele" value="{{$AceitaFone}}"/></label>
-				<label for="AceitaSMS">Aceita SMS:
-				<input type="checkbox" name="AceitaSMS" id="AceitaSMS" value="{{$AceitaSMS}}"/></label>
-																	</div>
-			</div>
+               <div class="form-group ">
 
+                     <div class="col-sm-4 offset-md-4">
+                     	   	      <div class="form-check form-check-inline">
 
-
-  <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-				<label for="AceitaEmail">Aceita email:
-				<input type="checkbox" id="AceitaEmail" name="AceitaEmail" value="{{$AceitaEmail}}"/></label>
-																				</div>
-			</div>
-
-
+				<label for="AceitaSMS" class="form-check-label">
+				<input type="checkbox" name="AceitaSMS" id="AceitaSMS" value="{{$AceitaSMS}}"/>>Aceita SMS:</label>
+				 </div>
+                 <div class="form-check form-check-inline">
+				<label for="AceitaEmail" class="form-check-label">
+			<input type="checkbox" id="AceitaEmail" name="AceitaEmail" value="{{$AceitaEmail}}"/>Aceita email:</label>
+								 </div>
+                          </div>
+                       </div>
 
 
 
@@ -306,6 +319,30 @@
 
 			</form>
   
+  </div>
+
+  </body>
+
+
+
+
+
+    <script  src="{{ asset('js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ asset('js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/agency.min.js')}}"></script>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
