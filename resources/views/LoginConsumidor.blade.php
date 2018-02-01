@@ -15,7 +15,7 @@
 
 
 
-@stop
+
 
 
 
@@ -276,3 +276,5 @@
     <script src="{{ asset('js/agency.min.js')}}"></script>
 
   </body>
+
+  @stop
