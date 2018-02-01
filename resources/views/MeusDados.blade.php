@@ -97,7 +97,7 @@
 
 
  
-@Include('layouts.MenuLogin')
+@Include('layouts.menuLogin')
 
 
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
