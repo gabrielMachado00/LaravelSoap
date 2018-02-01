@@ -127,7 +127,8 @@ $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 (float)Request::input('CPF'),
 Request::input('DataNasc'), Request::input('senha'), 
  (int)Request::input('Cartao'),(float)Request::input('produto'),'',Request::input('CodProf'),
-  Request::input('UFProf')
+  Request::input('UFProf'),
+  Request::input('NomeProf')
 )
 
 

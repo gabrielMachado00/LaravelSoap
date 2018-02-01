@@ -358,20 +358,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 
-  <script>
-    $(document).ready(function(){
-     $("#datanasc").mask("99/99/9999",{completed:function(){
-       var pre_date = $("#datanasc").val().split("/");
-       if (pre_date[0] <= 31 && pre_date[1] <= 12 && pre_date[2] <= 2017 && pre_date[2] > 1901){
-         var unmask_date = pre_date[2]+"-"+pre_date[1]+"-"+pre_date[0];
-         $("#datanasc_unmask").attr('value', unmask_date);
-         $('#blocknasc').addClass('hidden');
-       }
-       else {
-         $('#datanasc').blur();
-         $("#datanasc").val('');
-         $('#blocknasc').removeClass('hidden');
-       }
-     }});
-    });
-    </script>
+  
