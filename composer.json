@@ -19,9 +19,7 @@
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "laracasts/generators": "dev-master",
-        "phpunit/phpunit": "~5.7",
-        "way/generators": "^3.0",
-        "xethron/migrations-generator": "^2.0"
+        "phpunit/phpunit": "~5.7"
     },
     "autoload": {
         "classmap": [
