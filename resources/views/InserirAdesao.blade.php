@@ -87,8 +87,8 @@
 
 
 
-        <input type="text" id="datanasc" name="datanasc"  required/>
-            <span class="hidden" id="blocknasc">Digite uma data valida!</span>
+        <input type="text" id="datanasc" name="datanasc" class="form-control " placeholder="Data de Nascimento"  required/>
+   
                   </div>
                   
                     </div>
