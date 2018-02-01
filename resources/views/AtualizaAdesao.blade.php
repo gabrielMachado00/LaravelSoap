@@ -25,7 +25,7 @@
 
 <body>
    <div class="bg-color">
-@Include('layouts.MenuLogin')
+@Include('layouts.menuLogin')
       
 
 

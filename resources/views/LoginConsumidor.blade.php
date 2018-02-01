@@ -1,7 +1,7 @@
 
   
    
-  @extends('layouts.app')
+  @Include('layouts.app')
 
 
 
@@ -277,4 +277,3 @@
 
   </body>
 
-  @stop

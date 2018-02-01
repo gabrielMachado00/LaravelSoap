@@ -153,8 +153,7 @@ $AceitaEmail=$response1->ConsultaCadastroPFResult->AceitaEmail;
 
 
 
-var_dump($response);
-var_dump($response1);
+
 $request->session()->put('cartao', $cartao);
 $request->session()->put('senha', $senha);
 $request->session()->put('nome', $nome);
