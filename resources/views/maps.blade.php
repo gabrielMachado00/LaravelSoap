@@ -144,6 +144,13 @@
          
     </div>
 
+</div>
+
+
+
+
+       <div class="row no-gutters">
+
 
       <div class="col-xs-2">
         <div class="form-inline">
@@ -176,29 +183,50 @@
 
  </div>
 
-      
+      </div>
 
     
-           <div class="col-xs-3">
+           <div class="col-md-2 col-sm-2 ">
  <div class="TextoMerck1">
    
-    <p>M</p>
-    <div>
+M
+    </div>
+</div>
 
-
-
+<div class="row">
+      <div class="col-md-12 col-sm-12">
     <div class="TextoMerck2">
-     <p>Merck Atende</p>
+     Merck Atende
 </div>
 
       </div>
-  
+  </div>
+
+
+
+
+
 
 
  </form>
 
 
           </div>
+
+
+
+
+           <div class="row no-gutters">
+          <div class="col-xs-3 offset-md-6">
+
+<div class="merckDam">
+  © Merck KGaa,Darmstadt,Germany
+
+</div>
+
+          </div>
+        </div>
+
     </footer>
 
     <script>

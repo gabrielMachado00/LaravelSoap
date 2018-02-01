@@ -128,12 +128,14 @@ $sessao, 0,$hr_central, 'AP00','041', '00000000','66',0, '88','ADESSITE',
 Request::input('DataNasc'), Request::input('senha'), 
  (int)Request::input('Cartao'),(float)Request::input('produto'),'',Request::input('CodProf'),
   Request::input('UFProf')
-,Request::input('NomeProf'))
+)
 
 
 
 ]);
   
+
+$dataNa=Request::input('DataNasc');
 
 
 $produtos=DB::table('mk_produtos')->limit(1)->get();
@@ -195,7 +197,7 @@ $descricao=$produto->DESCRICAO;
 $nrCentral=$response->AdesaoPrdResult->NrCentral;
 
 
-var_dump($response);
+
 
 
 
@@ -207,8 +209,6 @@ $ean=$adesao->EAN;
 
 
 
-
-var_dump($DataNasc);
 
     
 

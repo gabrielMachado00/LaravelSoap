@@ -19,13 +19,13 @@ color:  #13bed0;
 
 }
 
-input:-webkit-autofill {
+.row input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #522e92 inset;
     color: white;
 }
 
 /* Cor do texto do autocomplete */
-input:-webkit-autofill {
+.row input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
 }
 
@@ -75,7 +75,7 @@ font-weight: 500;
 border-color: #12bdd0;
 
   border-width: 1.5px;
-
+color: white;
 border-radius: 7px;
 background-color:#522e92;
 }
@@ -142,15 +142,6 @@ background-color: #13bed0;
 width: 100px;
 }
 
-.row .cadastro{
-
-margin-right: 
-margin-top: 60px;
-border-radius: 6px;
-background-color: #522e92;
-font-size: 12px;
-width:100px !important; 
-}
 .cadastro2{
 
 	margin-top: -40px;
@@ -232,6 +223,21 @@ width:100px !important;
 
 
 
+.merckDam{
+
+color: white;
+margin-top: -20px;
+font-size: 12px;
+
+}
+
+.cadastro a{
+color: white;
+margin-top: 10px;
+}
+
+
+
 .cadastro{
 display: inline-block;
 
@@ -248,7 +254,7 @@ border-radius: 6px;
 
 }
 
-.sac p{
+ .sac{
 
 font-size: 25px;
     color: white;
@@ -271,24 +277,27 @@ font-family: "Merck";
     font-size:55px; 
     font-weight: 900;
     color: #5a2994;
-margin-left: 200px;
+margin-left: 220px;
 
   }
 
-  .textoMerck1 p{
+ .textoMerck1  {
 
+font-size: 20px;
+margin-left: 250px;
 
-
-margin-left: 210px;
-margin-top: 30px;
 color:white;
 font-family:'merck';
 }
-.textoMerck2 p{
-margin-left: 150px;
 
+.TextoMerck2{
+
+font-size: 16px;
+margin-top: 50px;
+margin-left: 20px;
 color:white;
 font-family:'merck';
+
 }
 
 
@@ -299,7 +308,7 @@ font-family:'merck';
  font-size: 12px;
       width: 80px;
 height: 25px;
-margin-left: 160px;
+margin-left: 100px;
 border-radius: 6px;
 margin-top: 30px;
 display: inline-block;
@@ -315,10 +324,7 @@ footer {
 }
 
 
-#Autorizo{
 
-  padding-bottom: 80px;
-}
 
 .Login{
  background: #94cf43;

@@ -144,15 +144,7 @@ background-color: #13bed0;
 width: 120px;
 }
 
-.cadastro{
 
-
-
-border-radius: 6px;
-background-color: #522e92;
-font-size: 12px;
-width:100px; 
-}
 .cadastro2{
 
   margin-top: -40px;
@@ -236,6 +228,19 @@ body {
   }
 
 
+.merckDam{
+
+color: white;
+margin-top: -20px;
+font-size: 12px;
+
+}
+
+.cadastro a{
+color: white;
+margin-top: 10px;
+}
+
 
 
 .cadastro{
@@ -254,7 +259,7 @@ border-radius: 6px;
 
 }
 
- p.sac{
+ .sac{
 
 font-size: 25px;
     color: white;
@@ -262,7 +267,7 @@ font-size: 25px;
   margin-top: 20px;
 }
 
-p.sac2{
+.sac2{
 font-size: 20px;
     color: white;
     font-family:'merck';
@@ -277,26 +282,27 @@ font-family: "Merck";
     font-size:55px; 
     font-weight: 900;
     color: #5a2994;
-margin-left: 200px;
+margin-left: 220px;
 
   }
 
-  p.textoMerck1 {
+.textoMerck1 {
 
-font-size: 16px;
-margin-left: 340px;
-margin-top: 80px;
+font-size: 20px;
+
+
 color:white;
 font-family:'merck';
 }
 
+.TextoMerck2{
 
-
-.textoMerck2 p{
-margin-left: 300px;
-margin-top: -20px;
+font-size: 16px;
+margin-top: 50px;
+margin-left: 20px;
 color:white;
 font-family:'merck';
+
 }
 
 
@@ -307,7 +313,7 @@ font-family:'merck';
  font-size: 12px;
       width: 80px;
 height: 25px;
-margin-left: 160px;
+margin-left: 100px;
 border-radius: 6px;
 margin-top: 30px;
 display: inline-block;

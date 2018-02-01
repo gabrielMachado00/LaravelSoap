@@ -5,20 +5,23 @@
     <!-- Adicionando JQuery -->
 
     <!-- Adicionando JQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
     <link href="{{ asset('css/consumidor.css')}}" rel="stylesheet">
-        
-<script>
-	$(document).ready(function () { 
-$('#Telefixo').mask('9999-9999');
-$('#Celular').mask('99999-9999');
-
-});
+      
+ <script  src="{{ asset('js/jquery.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 
 
 
-</script>
+  
+
+
+
+
+
+
+
+
     <!-- Adicionando Javascript -->
     <script type="text/javascript" >
         $(document).ready(function() {
@@ -87,9 +90,6 @@ $('#Celular').mask('99999-9999');
     </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
 
 
 
@@ -380,7 +380,6 @@ $('#Celular').mask('99999-9999');
                     </div>
 </section>    
 
-
 <footer>
 
       <div class="container">
@@ -407,6 +406,13 @@ $('#Celular').mask('99999-9999');
 
          
     </div>
+
+</div>
+
+
+
+
+       <div class="row no-gutters">
 
 
       <div class="col-xs-2">
@@ -440,34 +446,56 @@ $('#Celular').mask('99999-9999');
 
  </div>
 
-      
+      </div>
 
     
-           <div class="col-xs-3">
+           <div class="col-md-2 col-sm-2 ">
  <div class="TextoMerck1">
    
-    <p>M</p>
-    <div>
+M
+    </div>
+</div>
 
-
-
+<div class="row">
+      <div class="col-md-12 col-sm-12">
     <div class="TextoMerck2">
-     <p>Merck Atende</p>
+     Merck Atende
 </div>
 
       </div>
-  
+  </div>
+
+
+
+
+
 
 
  </form>
 
 
           </div>
+
+
+
+
+           <div class="row no-gutters">
+          <div class="col-xs-3 offset-md-6">
+
+<div class="merckDam">
+  © Merck KGaa,Darmstadt,Germany
+
+</div>
+
+          </div>
+        </div>
+
     </footer>
+
 
           </div>
  <!-- Bootstrap core JavaScript -->
-    <script  src="{{ asset('js/jquery.min.js')}}"></script>
+   
     <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Plugin JavaScript -->
@@ -479,4 +507,13 @@ $('#Celular').mask('99999-9999');
 
     <!-- Custom scripts for this template -->
     <script src="{{ asset('js/agency.min.js')}}"></script>
+
+      <script>
+  $(document).ready(function () { 
+$('#Telefixo').mask('9999-9999');
+$('#Celular').mask('99999-9999');
+
+});
+
+</script>
           <body>	

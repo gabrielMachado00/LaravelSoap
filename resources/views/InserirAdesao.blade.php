@@ -68,7 +68,7 @@
  <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-      <input type="text" class="form-control " name="CPF" id="colFormLabelSm" onblur="myFunction()" placeholder="CPF">
+      <input type="text" class="form-control " name="CPF" id="colFormLabelSm"  placeholder="CPF">
     </div>
 
 </div>
@@ -77,7 +77,7 @@
    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-4">
-      <input type="email" class="form-control " name="email" id="colFormLabelSm" onblur="myFunction()" placeholder="email">
+      <input type="email" class="form-control " name="email" id="colFormLabelSm" placeholder="email">
     </div>
     </div>
 
@@ -85,11 +85,13 @@
                      <div class="col-sm-4 offset-md-4">
                            
 
-            <input type="text"  name="DataNasc" id="DataNasc" class="form-control" placeholder="Data de Nascimento" autocomplete="off" value="" required/>
+
+
+        <input type="text" id="datanasc" name="datanasc"  required/>
+            <span class="hidden" id="blocknasc">Digite uma data valida!</span>
                   </div>
                   
                     </div>
-
 
 
                
@@ -140,7 +142,7 @@
                      <div class="col-sm-4 offset-md-4">
                            
         
-            <input type="text" class="form-control" name="NomeProf" placeholder="Nome do Profissional" onblur="myFunction()" required/>
+            <input type="text" class="form-control" name="NomeProf" placeholder="Nome do Profissional"  required/>
                  </div>
           </div>
 
@@ -148,7 +150,7 @@
                      <div class="col-sm-4 offset-md-4">
                            
 
-            <input type="text"  name="senha" id="senha" class="form-control"  autocomplete="off" onblur="myFunction()" placeholder="senha" required/>
+            <input type="text"  name="senha" id="senha" class="form-control"  autocomplete="off"  placeholder="senha" required/>
                   </div>
                   
                     </div>
@@ -163,9 +165,10 @@
                          </div>
                  </div>
                    </div>
-      <input type="hidden" id="datanasc_unmask" name="dataNasc " value="" />
+    
             <input type="hidden" name="Cartao" value="0" />
 
+  <input type="hidden" id="datanasc_unmask" name="DataNasc" value="" />
 
    <div class="form-group row">
   
@@ -259,16 +262,17 @@
       <div class="container">
         <form class="form form-inline" role="form">
         <div class="row no-gutters">
-          <div class="col-xs-2">
+          <div class="col-xs-3">
 
 
 
-     
+           <div class="sac">
 
-                     <p class="sac"> 0800 772-3322 </p>
-                
-                         
-             <p class="sac2"> Sac Merck cuida</p>
+                     <p> 0800 772-3322 </p>
+                 </div>
+
+                             <div class="sac2">
+             <p> Sac Merck cuida</p>
                 </div>
 
 
@@ -280,17 +284,24 @@
          
     </div>
 
+</div>
 
-      <div class="col-xs-2">
+
+
+
+       <div class="row">
+
+
+      <div class="col-xs-1">
         <div class="form-inline">
-        <div class="cadastro" id="cadastrar">
+        <div class="cadastro">
       <a href="#services" class="btn-Cadastro">Cadastre-se</a>
    </div>
       </div>
        </div>
 
 
-         <div class="col-sm-2 col-xs-2">
+         <div class="col-xs-1">
                  <div class="form-inline">
    <div class="Login">
             <a  href="#services" class="btn-Login">Login</a>
@@ -303,7 +314,7 @@
 
 
 
-      <div class="col-sm-1 col-xs-1">
+      <div class="col-xs-2">
 
          <div class="bulario">
       <a href="#services" class="btn-Bulario">Bulário</a>
@@ -312,62 +323,55 @@
 
  </div>
 
-      
-
-    
-           <div class="col-sm-3 col-xs-3">
-
-   
-    <p class="TextoMerck1">M</p>
-    <div>
 
 
 
-    <div class="col-sm-3 TextoMerck2">
-     <p>Merck Atende</p>
-</div>
+ </div>
 
-      </div>
-  
-
+        </div>
 
  </form>
 
 
-          </div>
+   
+
+
+
+
+
+       </div>
     </footer>
 
 
+
  <!-- Bootstrap core JavaScript -->
-    <script  src="{{ asset('js/jquery.min.js')}}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{{ asset('js/jquery.easing.min.js')}}"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="{{ asset('js/jqBootstrapValidation.js')}}"></script>
-    <script src="{{ asset('js/contact_me.js')}}"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="{{ asset('js/agency.min.js')}}"></script>
+   
 
 
-
-<script type="text/javascript">
-
-
-  function myFunction() {
-  $("input").click(function(){
-    
-    /* a função muda o background da div com id="box" */  
-    $("input").css("background","#522e92");
-  
-  }
-</script>
+      
 
 
   </body>
-
-
 </html>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+  <script>
+    $(document).ready(function(){
+     $("#datanasc").mask("99/99/9999",{completed:function(){
+       var pre_date = $("#datanasc").val().split("/");
+       if (pre_date[0] <= 31 && pre_date[1] <= 12 && pre_date[2] <= 2017 && pre_date[2] > 1901){
+         var unmask_date = pre_date[2]+"-"+pre_date[1]+"-"+pre_date[0];
+         $("#datanasc_unmask").attr('value', unmask_date);
+         $('#blocknasc').addClass('hidden');
+       }
+       else {
+         $('#datanasc').blur();
+         $("#datanasc").val('');
+         $('#blocknasc').removeClass('hidden');
+       }
+     }});
+    });
+    </script>

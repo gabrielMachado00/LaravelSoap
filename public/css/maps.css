@@ -66,97 +66,6 @@ margin-top: 100px;
 color: #5a2994;
 }
 
-.cadastro{
-display: inline-block;
-
-  margin-left: 150px;
-margin-top: 30px;
-  border: 1.3px solid #fff;
-  color: #fff;
-      width: 100px;
-height: 25px;
-margin-right: 10px;
-text-align: center;
- font-size: 12px;
-border-radius: 6px;
-
-}
-
-.sac p{
-
-font-size: 25px;
-    color: white;
-    font-family:'merck';
-  margin-top: 20px;
-}
-
-.sac2{
-font-size: 20px;
-    color: white;
-    font-family:'merck';
-}
-
-.Login{
- background: #94cf43;
-  border: 2px solid #94cf43;
-  color: #5c2791;
-  width: 80px;
-   font-size: 12px;
-   font-weight:bold; 
-   margin-top: 30px;
-
-text-align:center;
-height: 25px;
-border-radius: 6px;
-
-
-
-}
-.btn-cadastro {
-
-
-color: white;
-
-}
-.textoMerck1 p{
-
-
-
-margin-left: 210px;
-margin-top: 30px;
-color:white;
-font-family:'merck';
-}
-.textoMerck2 p{
-margin-left: 150px;
-
-color:white;
-font-family:'merck';
-}
-
-.bulario{
-  border: 1.4px solid #94cf43;
-  color: #94cf43;
-  text-align: center;
- font-size: 12px;
-      width: 80px;
-height: 25px;
-margin-left: 160px;
-border-radius: 6px;
-margin-top: 30px;
-display: inline-block;
-}
-
-.bulario a{
-color: #94cf43;
-}
-
-
-
-footer {
-    background-color: #5c2791;
-    padding: 20px 0 0;
-}
 
 
 .col-sm-4 .cadastro .btn-Login{
@@ -472,5 +381,128 @@ letter-spacing:3px;
 
 #mainNav .collapse .navbar-collapse{
 margin-left: -150px;
+
+}
+
+
+
+
+.merckDam{
+
+color: white;
+margin-top: -20px;
+font-size: 12px;
+
+}
+
+.cadastro a{
+color: white;
+margin-top: 10px;
+}
+
+
+
+.cadastro{
+display: inline-block;
+
+  margin-left: 150px;
+margin-top: 30px;
+  border: 1.3px solid #fff;
+  color: #fff;
+      width: 100px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+ font-size: 12px;
+border-radius: 6px;
+
+}
+
+ .sac{
+
+font-size: 25px;
+    color: white;
+    font-family:'merck';
+  margin-top: 20px;
+}
+
+.sac2{
+font-size: 20px;
+    color: white;
+    font-family:'merck';
+}
+
+
+  #TextoMerck {
+
+   
+font-family: "Merck";
+
+    font-size:55px; 
+    font-weight: 900;
+    color: #5a2994;
+margin-left: 220px;
+
+  }
+
+ .textoMerck1  {
+
+font-size: 20px;
+margin-left: 250px;
+
+color:white;
+font-family:'merck';
+}
+
+.TextoMerck2{
+
+font-size: 16px;
+margin-top: 50px;
+margin-left: 20px;
+color:white;
+font-family:'merck';
+
+}
+
+
+.bulario{
+  border: 1.4px solid #94cf43;
+  color: #94cf43;
+  text-align: center;
+ font-size: 12px;
+      width: 80px;
+height: 25px;
+margin-left: 100px;
+border-radius: 6px;
+margin-top: 30px;
+display: inline-block;
+}
+
+.bulario a{
+color: #94cf43;
+}
+
+footer {
+    background-color: #5c2791;
+    padding: 20px 0 0;
+}
+
+
+
+
+.Login{
+ background: #94cf43;
+  border: 2px solid #94cf43;
+  color: #5c2791;
+  width: 80px;
+   font-size: 12px;
+   font-weight:bold; 
+   margin-top: 30px;
+
+text-align:center;
+height: 25px;
+border-radius: 6px;
+
+
 
 }

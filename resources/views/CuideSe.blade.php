@@ -317,15 +317,14 @@ $(document).ready(function(){
         </div>
     </div>
 
-    
-    <div class="container p8">
-        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH" id="customRes">
-                <h4></h4>
-            </div>
+       </div>
 
-        </div>
-    </div>-->
+</section>
+
+
+
+
+
 
 
 <script>
@@ -403,5 +402,20 @@ $('#cria').on("click",function (e) {
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/custom.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
 </html>
