@@ -168,7 +168,7 @@
     
             <input type="hidden" name="Cartao" value="0" />
 
-  <input type="hidden" id="datanasc_unmask" name="DataNasc" value="" />
+
 
    <div class="form-group row">
   
