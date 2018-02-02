@@ -25,9 +25,7 @@
               <a class="nav-link" href="{{ url('/Cadastro/Adesao') }}">Cadastro</a>
             </li>
 
-              <li class="nav-item">
-              <a class="nav-link" href="{{ url('/LoginGeral') }}">Login</a>
-            </li>
+      
           </ul>
         </div>
       </div>

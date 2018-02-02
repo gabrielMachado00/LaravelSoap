@@ -98,8 +98,34 @@ background-color: black;
             color: white;
         }
 
-          .item .tile .crianca {
- background: url(../img/plantas_azuis.jpg) ;
+
+          .item .tile .tireoide1 {
+ background: url(../img/tireoide1.jpg) ;
+            background-size: cover;
+         
+            color: white;
+        }
+
+
+
+
+          .item .tile .tireoide2 {
+ background: url(../img/tireoide2.jpg) ;
+            background-size: cover;
+         
+            color: white;
+        }
+
+       .item .tile .tireoide5{
+ background: url(../img/tireoide5.jpg) ;
+            background-size: cover;
+         
+            color: white;
+        }
+
+
+               .item .tile .tireoide4 {
+ background: url(../img/tireoide4.jpg) ;
             background-size: cover;
          
             color: white;
@@ -140,7 +166,7 @@ background-color: black;
 
               <li class="" ><a href="{{ url('/Cadastro/Adesao') }}">Cadastro</a></li>
    
-                   <li class="" ><a href="{{ url('/LoginGeral') }}">Login</a></li>
+           
                 </ul>
               </div>
             </div>
@@ -275,40 +301,45 @@ $(document).ready(function(){
         <div class="resCarousel" data-items="2-3-3-3" data-slide="3" data-speed="900" data-animator="lazy">
             <div class="resCarousel-inner">
 
+            
                 <div class="item">
                     <div class="tile">
-                        <div>
-                   
-                        </div>
-                     
-                    </div>
-                       <h5>Title</h5>
-                        <p>content</p>
-                </div>
-
-                <div class="item">
-                    <div class="tile">
-                        <div id="cria" class="crianca">
+                        <div  class="tireoide5">
           
                         </div>
                       
                     </div>
 
-                        <h5>Title</h5>
-                        <p>content</p>
-                </div>
-
+                        <h5>Saiba mais</h5>
+                     <h5>sobre o hipotireoidismo</h5>
+ </div>
                 <div class="item">
                     <div class="tile">
-                        <div>
-                         
+                     <div  class="tireoide2">
+          
                         </div>
                       
                     </div>
-                      <h5>Title</h5>
-                        <p>content</p>
+                      <h5>É tudo culpa</h5>
+                        <h5>da tireoide?</h5>
                 </div>
 
+                     <div class="item">
+                    <div class="tile">
+                     <div  class="tireoide4">
+          
+                        </div>
+                      
+                    </div>
+                      <h5>Mitos e Verdades </h5>
+                        <p>Sobre A Tireoide</p>
+                </div>
+
+
+            </div>
+
+
+         
                
 
             </div>

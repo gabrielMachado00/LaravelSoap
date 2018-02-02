@@ -548,7 +548,7 @@ letter-spacing:3px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Arial';
     font-weight: 700;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
@@ -568,7 +568,8 @@ letter-spacing:3px;
     padding: 5px 10px;
     font-size: 14px;
     line-height: 54px;
-    font-weight: 400;
+    font-family: 'Arial';
+    font-weight: 700;
     text-transform: uppercase;
     background: transparent;
     color: #fff;
@@ -919,6 +920,7 @@ body{
 .navbar-default .navbar-nav > li > a{
     line-height: 22px;
     text-align: center;
+    font-family: 'Arial';
 
 }
 

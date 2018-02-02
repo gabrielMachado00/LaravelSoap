@@ -22,7 +22,7 @@
             
              Route::get('/Cadastro/Adesao', 'AdesaoController@Index');
 
-             Route::get('/Home', 'LoginController@LoginAdd');
+             Route::get('/Home', 'LoginGeralController@LoginGeral');
 
 
   Route::get('/CuideSe', 'CuideController@Cuide');
