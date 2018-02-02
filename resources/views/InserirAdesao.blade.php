@@ -51,136 +51,26 @@
 @endif
 
 
-    <form method="post">
 
 
+        <input type="text" id="datanasc" name="datanasc"  required/>
+            
 
-             <input type="hidden" name="_token" value="{{ csrf_token()}}">
-                                 
-                      <div class="form-group row">
-  
-   
-
- 
-
-              
-          </div>    
- <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-      <input type="text" class="form-control " name="CPF" id="colFormLabelSm"  placeholder="CPF">
-    </div>
-
-</div>
-
-
-   <div class="form-group row">
-  
-    <div class="col-sm-4 offset-md-4">
-      <input type="email" class="form-control " name="email" id="colFormLabelSm" placeholder="email">
-    </div>
-    </div>
-
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-
-
-
-        <input type="text" id="datanasc" name="datanasc" class="form-control " placeholder="Data de Nascimento"  required/>
-   
-                  </div>
-                  
-                    </div>
-
-
-               
-
-
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-                 
-        <select name="produto" id="produto" class="form-control" placeholder="produto" name="role_id">
-
-             
-            @foreach($produtos as $produto)
-            <option value="" disabled selected>Selecione um produto</option>
-            <option value="{{$produto->EAN}}">{{ $produto->DESCRICAO }}</option>    
-                 @endforeach
-                            
-                  
-                 
-                      
-                      </select>
-
-                    </div>
-</div>
-
-
-                  
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-           
-            <input type="text" class="form-control" placeholder="Codigo do Profissional" name="CodProf"  required/>
-                        </div>
-          </div>
-           
-             
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-        
-          <input type="text" class="form-control" id="UFProf" name="UFProf" value="" placeholder="UF" required/>
-
-          
-          </div>
-                    </div>
-
-                         <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-        
-            <input type="text" class="form-control" name="NomeProf" placeholder="Nome do Profissional"  required/>
-                 </div>
-          </div>
-
-                    <div class="form-group row">
-                     <div class="col-sm-4 offset-md-4">
-                           
-
-            <input type="text"  name="senha" id="senha" class="form-control"  autocomplete="off"  placeholder="senha" required/>
-                  </div>
-                  
-                    </div>
-              <div class="form-group row">
-         
-                     <div class="col-sm-4 offset-md-4">
-           <div class="form-check form-check-inline">
-      
-             <div class="mostrarRadio">
-        <input type="radio" class="form-check-input" name="mostrar" />  <label class="form-check-label" for="mostrar">mostrar senha</label>
-        </div>
-                         </div>
-                 </div>
-                   </div>
-    
-            <input type="hidden" name="Cartao" value="0" />
+  <input type="hidden" id="datanasc_unmask" name="DataNasc" value="" />
 
 
 
    <div class="form-group row">
   
     <div class="col-sm-4 offset-md-5">
-<button class="btn btn-primary btnMensagem"   >Próximo</button>                
+<button class="btn btn-primary btnMensagem"  id="mensagem" >Próximo</button> 
+<input type="hidden" name="_token" value="{{ csrf_token() }}">               
  </div>
 
                     </div>
                       </div>
 
 
-          </form>
 
 
      <!---->
@@ -358,4 +248,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 
-  
+  <script>
+    $(document).ready(function(){
+     $("#datanasc").mask("99/99/9999",{completed:function(){
+       var pre_date = $("#datanasc").val().split("/");
+       if (pre_date[0] <= 31 && pre_date[1] <= 12 && pre_date[2] <= 2017 && pre_date[2] > 1901){
+         var unmask_date = pre_date[2]+"-"+pre_date[1]+"-"+pre_date[0];
+         $("#mensagem").click( function()
+         {
+           alert(unmask_date);
+         }
+      );
+
+         $("#datanasc_unmask").attr('value', unmask_date);
+         $('#blocknasc').addClass('hidden');
+       
+       
+        
+
+       }
+       else {
+         $('#datanasc').blur();
+         $("#datanasc").val('');
+         $('#blocknasc').removeClass('hidden');
+       }
+     }});
+    });
+    </script>
