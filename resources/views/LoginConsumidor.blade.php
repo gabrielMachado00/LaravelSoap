@@ -66,9 +66,9 @@
           <div class="col-md-4 offset-md-4">
 
           
-                 <p class="cadastro1">Novo</p>
+                 <p class="cadastro1">Login</p>
 
-                  <p class="cadastro2">Cadastro</p>
+                  <p class="cadastro2">Paciente</p>
           </div>  
         </div>
 

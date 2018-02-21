@@ -218,7 +218,7 @@ background-color: black;
 <div class="col-md-2  col-sm-2 col-xs-2  offset-md-4">
 
              <div class="col-md-2 col-sm-2 col-xs-2 ">
-            <a href="#"  class="btn btn-default btn-circle4"><p>Saude 
+            <a id="btn-circle4" class="btn btn-default btn-circle4"><p>Saude 
             </p><p>da Mulher</p></a>
              </div>
 </a>
@@ -259,15 +259,24 @@ background-color: black;
     </section>
     <!---->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+   
+
     <script>
-$('.btn-circle4').click(function(){
-    $('#imageCarousel').slideToggle('slow');
-});
+
+$(document).ready(function(){
+if($('#btn-circle4').data('clicked')){
+alert("sifude");
+};
+
+   });
+
     </script>
+
+
 
     <script>
 $(document).ready(function(){
-    $('#imagem').click(function (e) { 
+    $('.tireoide5').click(function (e) { 
       e.preventDefault();
       $('#frame').attr("src", $(this).attr("href"));
 })
@@ -298,7 +307,7 @@ $(document).ready(function(){
 
    <div class="container p8">
      
-        <div class="resCarousel" data-items="2-3-3-3" data-slide="3" data-speed="900" data-animator="lazy">
+        <div class="resCarousel" id="imageCarousel" data-items="2-3-3-3" data-slide="3" data-speed="900" data-animator="lazy">
             <div class="resCarousel-inner">
 
             
@@ -348,6 +357,14 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+
+
+
+
+
+
+
        </div>
 
 </section>
@@ -360,7 +377,7 @@ $(document).ready(function(){
 
 <script>
   
-$('#cria').on("click",function (e) { 
+$('.tireoide5').on("click",function (e) { 
       e.preventDefault();
       $('#frame').prop("src", "http://localhost:8000/CuideSe#");
 });
